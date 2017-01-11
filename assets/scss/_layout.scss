@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// Flex layout
+.layout {
+  &-row {
+    display: flex;
+  }
+
+  &-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-center {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// slide section
+.slide {
+  // align center
+  &-center {
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    z-index: 3;
+  }
+}
+
+// highlight section
+.highlight {
+  margin: 50px;
+}

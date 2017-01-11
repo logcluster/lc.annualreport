@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900");
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+body {
+  font-family: "Lato", Arial, sans-serif; }
+
+p {
+  line-height: 1.6; }
+
+.red {
+  color: #c0392b; }
+
+.blue {
+  color: #34495e; }
+
+.number {
+  display: block;
+  font-size: 4em;
+  font-weight: 900; }
+
+.label {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+h1 {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  letter-spacing: 2px; }
+
+.boxed {
+  border: 5px solid #fff;
+  display: inline-block;
+  font-family: "Merriweather", Georgia, serif;
+  padding: 20px; }
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+
+.link {
+  bottom: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 5px;
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.nav {
+  left: 30px;
+  position: absolute;
+  top: 30px;
+  z-index: 4; }
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .nav-item-circle {
+    transition: transform 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    height: 16px;
+    margin-bottom: 16px;
+    width: 16px; }
+    .nav-item-circle:hover {
+      transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+      background: #c0392b;
+      transform: scale(1.2); }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.layout-row {
+  display: -ms-flexbox;
+  display: flex; }
+
+.layout-column {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.layout-center {
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.slide-center {
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  z-index: 3; }
+
+.highlight {
+  margin: 50px; }
+
+section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  position: relative; }
+
+@supports (background-blend-mode: multiply) {
+  .blend {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5); }
+    .blend-blue {
+      background-color: #34495e; }
+    .blend-red {
+      background-color: #c0392b; } }
+
+@supports not (background-blend-mode: multiply) {
+  .overlay {
+    background-color: #000;
+    bottom: 0;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2; }
+    .overlay-blue {
+      background-color: #34495e; }
+    .overlay-red {
+      background-color: #c0392b; } }
+
+#intro {
+  background-image: url("../images/intro.jpg"); }
+
+#car {
+  background-image: url("../images/car.png"); }

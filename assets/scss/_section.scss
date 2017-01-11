@@ -1,0 +1,56 @@
+section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  height: 100vh;
+  position: relative;
+}
+
+// background blend mode
+@supports (background-blend-mode: multiply) {
+  .blend {
+    background-blend-mode: multiply;
+    background-color: $gray;
+
+    &-blue {
+      background-color: $lc-blue;
+    }
+
+    &-red {
+      background-color: $lc-red;
+    }
+  }
+}
+
+// overlay when background blend is not supported
+@supports not (background-blend-mode: multiply) {
+  .overlay {
+    background-color: $black;
+    bottom: 0;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    &-blue {
+      background-color: $lc-blue;
+    }
+
+    &-red {
+      background-color: $lc-red;
+    }
+  }
+}
+
+
+
+// Background images
+#intro {
+  background-image: url('../images/intro.jpg');
+}
+
+#car {
+  background-image: url('../images/car.png');
+}

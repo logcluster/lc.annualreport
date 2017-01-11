@@ -1,0 +1,30 @@
+.nav {
+  left: 30px;
+  position: absolute;
+  top: 30px;
+  z-index: 4;
+
+  &-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-item {
+
+    &-circle {
+      @include transition(transform, .3s);
+      background-color: $gray;
+      border-radius: 50%;
+      height: 16px;
+      margin-bottom: 16px;
+      width: 16px;
+
+      &:hover {
+        @include transition(all, .3s);
+        background: $lc-red;
+        transform: scale(1.2);
+      }
+    }
+  }
+}

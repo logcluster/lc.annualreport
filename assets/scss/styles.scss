@@ -1,0 +1,17 @@
+// Import Lato from Google Fonts
+// lato font
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+// Merriweather font
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900');
+// variables to use throughout each style component
+@import 'variables';
+// Mixinns and helpers
+@import 'mixins';
+// typography settings
+@import 'typography';
+// main navigation styles, cicle links items
+@import 'mainnav';
+// layout styles, flex positioning
+@import 'layout';
+// sections container styles
+@import 'section';

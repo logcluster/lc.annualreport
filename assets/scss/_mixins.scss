@@ -1,0 +1,13 @@
+@mixin transition($prop, $duration) {
+  transition: $prop $duration cubic-bezier(.65, .05, .36, 1);
+}
+
+@mixin color($color) {
+  color: $color;
+}
+
+@each $position in left, right, center {
+  .text-#{$position} {
+    text-align: #{$position};
+  }
+}
