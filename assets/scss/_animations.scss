@@ -1,0 +1,33 @@
+// fade and appear from top
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// fade and disappear down
+@keyframes fade-up {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+.fade-up {
+  @include animation(fade-up, 2s);
+  opacity: 0;
+}
+
+.fade-down {
+  @include animation(fade-down, 2s);
+  opacity: 1;
+}

@@ -60,7 +60,7 @@ h1 {
 
 .nav {
   left: 30px;
-  position: absolute;
+  position: fixed;
   top: 30px;
   z-index: 4; }
   .nav-list {
@@ -69,7 +69,7 @@ h1 {
     padding: 0; }
   .nav-item-circle {
     transition: transform 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     height: 16px;
     margin-bottom: 16px;
@@ -110,6 +110,7 @@ body {
   margin: 50px; }
 
 section {
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,3 +146,27 @@ section {
 
 #car {
   background-image: url("../images/car.png"); }
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-100px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fade-up {
+  from {
+    opacity: 1;
+    transform: translateY(0); }
+  to {
+    opacity: 0;
+    transform: translateY(-100px); } }
+
+.fade-up {
+  animation: fade-up 2s cubic-bezier(0.65, 0.05, 0.36, 1);
+  opacity: 0; }
+
+.fade-down {
+  animation: fade-down 2s cubic-bezier(0.65, 0.05, 0.36, 1);
+  opacity: 1; }
