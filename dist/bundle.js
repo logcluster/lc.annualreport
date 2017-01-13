@@ -1,11 +1,40 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+var jQuery = require('../node_modules/jquery/dist/jquery.min.js');
 var $ = require('../node_modules/jquery/dist/jquery.min.js');
 
-function fade() {
-  $( ".boxed" ).addClass('fade-up');
-  $( "h1" ).addClass('fade-up');
-  console.log('here');
-}
+// Plugin @RokoCB :: Return the visible amount of px
+// of any element currently in viewport.
+// stackoverflow.com/questions/24768795/
+;(function($, win) {
+  $.fn.inViewport = function(cb) {
+     return this.each(function(i,el){
+       function visPx(){
+         var H = $(this).height(),
+             r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+         return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));
+       } visPx();
+       $(win).on("resize scroll", visPx);
+     });
+  };
+}(jQuery, window));
+
+
+
+$("h1").inViewport(function(px){
+  if(px) $(this).addClass("fade-down") ;
+});
+
+$(".highlight-image").inViewport(function(px){
+    if(px) $(this).addClass("fade-down") ;
+});
+
+$(".highlight").inViewport(function(px){
+    if(px) $(this).addClass("fade-down") ;
+});
+
+$(".blend").inViewport(function(px){
+    if(px) $(this).addClass("blend") ;
+});
 
 },{"../node_modules/jquery/dist/jquery.min.js":2}],2:[function(require,module,exports){
 /*! jQuery v3.1.1 | (c) jQuery Foundation | jquery.org/license */

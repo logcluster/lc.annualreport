@@ -11,7 +11,7 @@
 
   </head>
 
-  <body onscroll="fade()">
+  <body>
     <main>
       <!-- Main navigation, list items, circle links -->
       <!-- Main navigation -->
@@ -97,8 +97,7 @@
       <!-- Intro section -->
       <section id="intro" class="layout-column layout-center blend">
   <div class="slide-center">
-    <!-- Insert logo -->
-    <h2 class="text-shadow boxed">Logistics Cluster</h2>
+    <img src="images/logo.svg" alt="Logistics Cluster Logo" class="logo">
     <h1 class="text-shadow text-uppercase">Year in Review 2016</h1>
   </div>
   <a href="#car" class="link">
@@ -121,7 +120,7 @@
       <div class="highlight">
         <span class="number red">2.2 million</span>
         <span class="label">people in need of humanitarian assistance*</span>
-        <img src="images/manypeople.svg" alt="People icon" class="highlight-image fade-down">
+        <img src="images/manypeople.svg" alt="People icon" class="highlight-image">
         <!-- Insert people icons -->
         <small class="dimmed"><i>*[OCHA, November 2016]</i></small>
       </div>
@@ -141,24 +140,14 @@
 </section>
 
     </main>
-  <!-- <script type="text/javascript" src="bundle.js"></script> -->
+  <script type="text/javascript" src="bundle.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 
   <script type="text/javascript">
-    function fade() {
-      $( "#intro .boxed" ).addClass('fade-up');
-      $( "#intro h1" ).addClass('fade-up');
-      console.log('fade');
 
-      if( $(window).scrollTop() < 200 ) {
-        $( ".boxed" ).removeClass('fade-up');
-        $( "h1" ).removeClass('fade-up');
-        console.log('scroll top');
-      }
-    }
 
   </script>
   </body>

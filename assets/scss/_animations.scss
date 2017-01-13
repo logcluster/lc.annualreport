@@ -22,12 +22,25 @@
   }
 }
 
+// background blend
+@keyframes blend {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: $lc-blue;
+  }
+}
+
 .fade-up {
   @include animation(fade-up, 2s);
-  opacity: 0;
 }
 
 .fade-down {
   @include animation(fade-down, 2s);
   opacity: 1;
+}
+
+.blend {
+  @include animation(blend, 2s);
 }
