@@ -15,6 +15,10 @@ p {
   @include color($lc-blue);
 }
 
+.dimmed {
+  @include color($dimmed);
+}
+
 // big number display
 .number {
   display: block;
@@ -25,8 +29,10 @@ p {
 // secondary label
 .label {
   color: $dimmed;
+  display: block;
   font-family: $sans-serif;
   font-weight: 300;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -55,8 +61,25 @@ h1 {
   color: $dimmed;
   letter-spacing: 5px;
   position: absolute;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    opacity: .6;
+  }
+
+  &:hover {
+    @include transition(color, .3s);
+    color: $white;
+
+    img {
+      @include transition(opacity, .3s);
+      opacity: 1;
+    }
+  }
 }
 
 .text-uppercase {
