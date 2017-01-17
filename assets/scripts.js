@@ -24,13 +24,17 @@ $("h1").inViewport(function(px){
 });
 
 $(".highlight-image").inViewport(function(px){
-    if(px) $(this).addClass("fade-down") ;
+  if(px) $(this).addClass("fade-down") ;
 });
 
 $(".highlight").inViewport(function(px){
-    if(px) $(this).addClass("fade-down") ;
+  if(px) $(this).addClass("fade-down") ;
+});
+
+$(".text").inViewport(function(px){
+  if(px) $(this).addClass("fade-down") ;
 });
 
 $(".blend").inViewport(function(px){
-    if(px) $(this).addClass("blend") ;
+  if(px) $(this).addClass("blend") ;
 });

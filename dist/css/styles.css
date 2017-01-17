@@ -36,10 +36,13 @@ p {
   font-weight: 300;
   margin-bottom: 20px;
   text-transform: uppercase; }
+  .label-red {
+    color: #c0392b;
+    font-weight: 900; }
 
 h1 {
   font-family: "Lato", Arial, sans-serif;
-  font-size: 3em;
+  font-size: 40px;
   font-weight: 900;
   letter-spacing: 2px; }
 
@@ -106,6 +109,8 @@ body {
     .layout-row {
       -ms-flex-direction: column;
           flex-direction: column; } }
+  .layout-row > div {
+    width: 100%; }
 
 .layout-column {
   display: -ms-flexbox;
@@ -189,6 +194,9 @@ section {
 
 #car {
   background-image: url("../images/car.png"); }
+
+#numbersOne {
+  background-image: url("../images/numbers1.jpg"); }
 
 @keyframes fade-down {
   from {

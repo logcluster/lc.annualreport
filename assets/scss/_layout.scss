@@ -11,6 +11,10 @@ body {
     @include media-breakpoint-down(xs) {
       flex-direction: column;
     }
+
+    & > div {
+      width: 100%;
+    }
   }
 
   &-column {
