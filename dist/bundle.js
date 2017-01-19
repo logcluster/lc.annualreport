@@ -28,16 +28,20 @@ $(".highlight-image").inViewport(function(px){
   if(px) $(this).addClass("fade-down") ;
 });
 
-$(".highlight").inViewport(function(px){
+$(".left").inViewport(function(px){
   if(px) $(this).addClass("fade-down") ;
 });
 
-$(".text").inViewport(function(px){
+$(".right").inViewport(function(px){
   if(px) $(this).addClass("fade-down") ;
 });
 
-$(".blend").inViewport(function(px){
-  if(px) $(this).addClass("blend") ;
+$(".v-line").inViewport(function(px){
+  if(px) $(this).addClass("stretch") ;
+});
+
+$(".bar-chart-h").inViewport(function(px){
+  if(px) $(this).addClass("stretch-h") ;
 });
 
 },{"../node_modules/jquery/dist/jquery.min.js":2}],2:[function(require,module,exports){

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
 .text-left {
   text-align: left; }
 
@@ -24,10 +25,19 @@ p {
 .dimmed {
   color: rgba(255, 255, 255, 0.5); }
 
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+  font-weight: 400;
+  text-transform: uppercase; }
+
 .number {
   display: block;
   font-size: 4em;
   font-weight: 900; }
+  .number h2 {
+    font-size: 30px;
+    margin: 0; }
 
 .label {
   color: rgba(255, 255, 255, 0.5);
@@ -50,6 +60,7 @@ h1 {
   border: 5px solid #fff;
   display: inline-block;
   font-family: "Merriweather", Georgia, serif;
+  margin: 40px 0;
   padding: 20px; }
 
 .text-shadow {
@@ -77,6 +88,16 @@ h1 {
 .text-uppercase {
   text-transform: uppercase; }
 
+.icon {
+  display: block;
+  font-size: 64px; }
+  .icon-large {
+    font-size: 6em; }
+  .icon-facebook {
+    color: #3b5998; }
+  .icon-twitter {
+    color: #1da1f2; }
+
 .nav {
   left: 30px;
   position: fixed;
@@ -102,6 +123,10 @@ body {
   margin: 0;
   padding: 0; }
 
+hr {
+  border-bottom: 1px;
+  border-color: rgba(255, 255, 255, 0.5); }
+
 .layout-row {
   display: -ms-flexbox;
   display: flex; }
@@ -109,8 +134,12 @@ body {
     .layout-row {
       -ms-flex-direction: column;
           flex-direction: column; } }
-  .layout-row > div {
+  .layout-row-1 > div {
     width: 100%; }
+  .layout-row-2 > div {
+    width: 50%; }
+  .layout-row-3 > div {
+    width: 33.333333%; }
 
 .layout-column {
   display: -ms-flexbox;
@@ -123,6 +152,11 @@ body {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center; }
+  .layout-center-stretch {
+    -ms-flex-align: stretch;
+        align-items: stretch;
+    -ms-flex-pack: center;
+        justify-content: center; }
 
 .slide-center {
   margin: 20px;
@@ -156,6 +190,26 @@ body {
   @media (min-width: 992px) {
     .text {
       width: 30%; } }
+
+.v-line {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 60px;
+  min-height: 200px;
+  position: relative;
+  width: 2px !important; }
+  .v-line::after {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    bottom: -20px;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    margin-left: -10px;
+    position: absolute;
+    width: 20px; }
+
+.img-fluid {
+  max-width: 100%; }
 
 section {
   background-attachment: fixed;
@@ -196,7 +250,16 @@ section {
   background-image: url("../images/car.png"); }
 
 #numbersOne {
-  background-image: url("../images/numbers1.jpg"); }
+  background-attachment: local;
+  background-image: linear-gradient(#34495e, #22303d); }
+
+#numbersTwo {
+  background-attachment: local;
+  background-image: linear-gradient(#22303d, #10161c); }
+
+#numbersThree {
+  background-attachment: local;
+  background-image: linear-gradient(#10161c, black); }
 
 @keyframes fade-down {
   from {
@@ -214,6 +277,26 @@ section {
     opacity: 0;
     transform: translateY(-100px); } }
 
+@keyframes stretch {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top; }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin: top; } }
+
+@keyframes stretch-h {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left; }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left; } }
+
 @keyframes blend {
   from {
     background-color: transparent; }
@@ -229,3 +312,11 @@ section {
 
 .blend {
   animation: blend 2s cubic-bezier(0.65, 0.05, 0.36, 1); }
+
+.stretch {
+  animation: stretch 2s cubic-bezier(0.65, 0.05, 0.36, 1); }
+  .stretch:after {
+    animation: fade-down 3s cubic-bezier(0.65, 0.05, 0.36, 1); }
+
+.stretch-h {
+  animation: stretch-h 2s cubic-bezier(0.65, 0.05, 0.36, 1); }

@@ -22,6 +22,34 @@
   }
 }
 
+// stretch vertically
+@keyframes stretch {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
+
+// stretch horizontally
+@keyframes stretch-h {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
 // background blend
 @keyframes blend {
   from {
@@ -43,4 +71,16 @@
 
 .blend {
   @include animation(blend, 2s);
+}
+
+.stretch {
+  @include animation(stretch, 2s);
+
+  &:after {
+    @include animation(fade-down, 3s);
+  }
+}
+
+.stretch-h {
+  @include animation(stretch-h, 2s);
 }

@@ -19,11 +19,24 @@ p {
   @include color($dimmed);
 }
 
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 // big number display
 .number {
   display: block;
   font-size: 4em;
   font-weight: 900;
+
+  // when you want to highlight the label below
+  h2 {
+    font-size: 30px;
+    margin: 0;
+  }
 }
 
 // secondary label
@@ -54,6 +67,7 @@ h1 {
   border: 5px solid $white;
   display: inline-block;
   font-family: $serif;
+  margin: 40px 0;
   padding: 20px;
 }
 
@@ -89,4 +103,21 @@ h1 {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.icon {
+  display: block;
+  font-size: 64px;
+
+  &-large {
+    font-size: 6em;
+  }
+
+  &-facebook {
+    color: $facebook;
+  }
+
+  &-twitter {
+    color: $twitter;
+  }
 }

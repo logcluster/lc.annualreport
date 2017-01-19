@@ -57,5 +57,16 @@ section {
 }
 
 #numbersOne {
-  background-image: url('../images/numbers1.jpg');
+  background-attachment: local;
+  background-image: linear-gradient($lc-blue, darken($lc-blue, 10%));
+}
+
+#numbersTwo {
+  background-attachment: local;
+  background-image: linear-gradient(darken($lc-blue, 10%), darken($lc-blue, 20%));;
+}
+
+#numbersThree {
+  background-attachment: local;
+  background-image: linear-gradient(darken($lc-blue, 20%), darken($lc-blue, 30%));;
 }

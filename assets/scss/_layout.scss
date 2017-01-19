@@ -3,6 +3,12 @@ body {
   padding: 0;
 }
 
+// divider styles
+hr {
+  border-bottom: 1px;
+  border-color: rgba(255, 255, 255, .5);
+}
+
 // Flex layout
 .layout {
   &-row {
@@ -12,8 +18,16 @@ body {
       flex-direction: column;
     }
 
-    & > div {
+    &-1 > div {
       width: 100%;
+    }
+
+    &-2 > div {
+      width: 50%;
+    }
+
+    &-3 > div {
+      width: 33.333333%;
     }
   }
 
@@ -25,6 +39,11 @@ body {
   &-center {
     align-items: center;
     justify-content: center;
+
+    &-stretch {
+      align-items: stretch;
+      justify-content: center;
+    }
   }
 }
 
@@ -80,4 +99,30 @@ body {
   @include media-breakpoint-up(lg) {
     width: 30%;
   }
+}
+
+// vertical line
+.v-line {
+  background-color: $dimmed;
+  margin-bottom: 60px;
+  min-height: 200px;
+  position: relative;
+  width: 2px !important;
+
+  &::after {
+    background-color: $dimmed;
+    border-radius: 50%;
+    bottom: -20px;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    margin-left: -10px;
+    position: absolute;
+    width: 20px;
+  }
+}
+
+// responsive image
+.img-fluid {
+  max-width: 100%;
 }
