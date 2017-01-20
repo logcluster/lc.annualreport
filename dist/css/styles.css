@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700");
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
 .text-left {
   text-align: left; }
@@ -50,6 +51,12 @@ p {
     color: #c0392b;
     font-weight: 900; }
 
+.serif {
+  font-family: "Droid Serif", Georgia, serif; }
+  .serif .title {
+    font-family: "Droid Serif", Georgia, serif;
+    font-weight: 700; }
+
 h1 {
   font-family: "Lato", Arial, sans-serif;
   font-size: 40px;
@@ -59,7 +66,7 @@ h1 {
 .boxed {
   border: 5px solid #fff;
   display: inline-block;
-  font-family: "Merriweather", Georgia, serif;
+  font-family: "Droid Serif", Georgia, serif;
   margin: 40px 0;
   padding: 20px; }
 
@@ -174,7 +181,7 @@ hr {
 
 .highlight {
   margin: 50px;
-  width: 50%; }
+  width: 30%; }
   .highlight-image {
     display: block;
     margin-bottom: 20px;
@@ -182,14 +189,18 @@ hr {
     margin-right: auto;
     max-width: 100%;
     width: 390px; }
+  .highlight-icon {
+    margin-right: 10px;
+    height: 48px;
+    width: 48px; }
 
 .text {
   margin: 50px;
   text-align: left;
-  width: 50%; }
-  @media (min-width: 992px) {
-    .text {
-      width: 30%; } }
+  width: 70%; }
+  .text .title {
+    margin-bottom: 20px;
+    margin-top: 0; }
 
 .v-line {
   background-color: rgba(255, 255, 255, 0.5);
@@ -260,6 +271,26 @@ section {
 #numbersThree {
   background-attachment: local;
   background-image: linear-gradient(#10161c, black); }
+
+.country-numbers {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px; }
+
+.fund-percentage {
+  position: relative;
+  text-align: center;
+  width: 130px; }
+  .fund-percentage .label {
+    margin-top: 10px; }
+
+.fund-value {
+  font-family: "Droid Serif", Georgia, serif;
+  font-size: 3em;
+  font-weight: 900;
+  left: 35%;
+  position: absolute;
+  top: 25%;
+  z-index: 1; }
 
 @keyframes fade-down {
   from {

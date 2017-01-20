@@ -70,3 +70,35 @@ section {
   background-attachment: local;
   background-image: linear-gradient(darken($lc-blue, 20%), darken($lc-blue, 30%));;
 }
+
+
+// country numbers sections
+.country {
+  &-numbers {
+    border-bottom: 3px solid $dimmed;
+    margin-bottom: 10px;
+  }
+}
+
+// country funded percentage
+.fund {
+  &-percentage {
+    position: relative;
+    text-align: center;
+    width: 130px;
+
+    .label {
+      margin-top: 10px;
+    }
+  }
+
+  &-value {
+    font-family: $serif;
+    font-size: 3em;
+    font-weight: 900;
+    left: 35%;
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+  }
+}

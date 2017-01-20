@@ -31,6 +31,10 @@ $(".left").inViewport(function(px){
   if(px) $(this).addClass("fade-down") ;
 });
 
+$(".middle").inViewport(function(px){
+  if(px) $(this).addClass("fade-down") ;
+});
+
 $(".right").inViewport(function(px){
   if(px) $(this).addClass("fade-down") ;
 });

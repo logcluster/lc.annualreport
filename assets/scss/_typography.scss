@@ -54,6 +54,16 @@ p {
   }
 }
 
+// serif font
+.serif {
+  font-family: $serif;
+
+  .title {
+    font-family: $serif;
+    font-weight: 700;
+  }
+}
+
 // section title
 h1 {
   font-family: $sans-serif;
