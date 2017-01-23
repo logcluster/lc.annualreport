@@ -85,20 +85,19 @@ section {
   &-percentage {
     position: relative;
     text-align: center;
-    width: 130px;
+    margin: 0 auto;
+    width: 170px;
 
-    .label {
+    &-label {
       margin-top: 10px;
     }
   }
 
   &-value {
     font-family: $serif;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 900;
-    left: 35%;
     position: absolute;
-    top: 25%;
     z-index: 1;
   }
 }

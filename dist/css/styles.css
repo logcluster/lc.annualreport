@@ -279,17 +279,16 @@ section {
 .fund-percentage {
   position: relative;
   text-align: center;
-  width: 130px; }
-  .fund-percentage .label {
+  margin: 0 auto;
+  width: 170px; }
+  .fund-percentage-label {
     margin-top: 10px; }
 
 .fund-value {
   font-family: "Droid Serif", Georgia, serif;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 900;
-  left: 35%;
   position: absolute;
-  top: 25%;
   z-index: 1; }
 
 @keyframes fade-down {
