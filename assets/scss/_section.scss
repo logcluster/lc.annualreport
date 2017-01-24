@@ -5,6 +5,7 @@ section {
   background-size: cover;
   color: $white;
   min-height: 100vh;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -49,11 +50,11 @@ section {
 
 // Background images
 #intro {
-  background-image: url('../images/intro.jpg');
+  background-image: url('../images/air-ops.jpg');
 }
 
 #car {
-  background-image: url('../images/car.png');
+  background-image: url('../images/car3.jpg');
 }
 
 #numbersOne {
@@ -63,12 +64,24 @@ section {
 
 #numbersTwo {
   background-attachment: local;
-  background-image: linear-gradient(darken($lc-blue, 10%), darken($lc-blue, 20%));;
+  background-image: linear-gradient(darken($lc-blue, 10%), darken($lc-blue, 20%));
 }
 
 #numbersThree {
   background-attachment: local;
-  background-image: linear-gradient(darken($lc-blue, 20%), darken($lc-blue, 30%));;
+  background-image: linear-gradient(darken($lc-blue, 20%), darken($lc-blue, 30%));
+}
+
+#ecuador {
+  background-image: url('../images/ecuador.jpg');
+}
+
+#drc {
+  background-image: url('../images/team1.jpg');
+}
+
+#iraq {
+  background-image: url('../images/iraq2.jpg');
 }
 
 

@@ -21,9 +21,13 @@ p {
 
 .title {
   font-family: 'Oswald', sans-serif;
-  font-size: 3.5em;
+  font-size: 2em;
   font-weight: 400;
   text-transform: uppercase;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 3.5em;
+  }
 }
 
 // big number display

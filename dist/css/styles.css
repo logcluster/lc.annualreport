@@ -4,12 +4,21 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
 .text-left {
   text-align: left; }
+  @media (max-width: 991px) {
+    .text-left {
+      text-align: center; } }
 
 .text-right {
   text-align: right; }
+  @media (max-width: 991px) {
+    .text-right {
+      text-align: center; } }
 
 .text-center {
   text-align: center; }
+  @media (max-width: 991px) {
+    .text-center {
+      text-align: center; } }
 
 body {
   font-family: "Lato", Arial, sans-serif; }
@@ -28,9 +37,12 @@ p {
 
 .title {
   font-family: 'Oswald', sans-serif;
-  font-size: 3.5em;
+  font-size: 2em;
   font-weight: 400;
   text-transform: uppercase; }
+  @media (min-width: 992px) {
+    .title {
+      font-size: 3.5em; } }
 
 .number {
   display: block;
@@ -137,16 +149,17 @@ hr {
 .layout-row {
   display: -ms-flexbox;
   display: flex; }
-  @media (max-width: 575px) {
+  @media (max-width: 991px) {
     .layout-row {
       -ms-flex-direction: column;
           flex-direction: column; } }
-  .layout-row-1 > div {
-    width: 100%; }
-  .layout-row-2 > div {
-    width: 50%; }
-  .layout-row-3 > div {
-    width: 33.333333%; }
+  @media (min-width: 992px) {
+    .layout-row-1 > div {
+      width: 100%; }
+    .layout-row-2 > div {
+      width: 50%; }
+    .layout-row-3 > div {
+      width: 33.333333%; } }
 
 .layout-column {
   display: -ms-flexbox;
@@ -164,6 +177,10 @@ hr {
         align-items: stretch;
     -ms-flex-pack: center;
         justify-content: center; }
+    @media (max-width: 767px) {
+      .layout-center-stretch {
+        -ms-flex-align: center;
+            align-items: center; } }
 
 .slide-center {
   margin: 20px;
@@ -180,8 +197,10 @@ hr {
   width: 390px; }
 
 .highlight {
-  margin: 50px;
-  width: 30%; }
+  margin: 50px; }
+  @media (min-width: 992px) {
+    .highlight {
+      width: 30%; } }
   .highlight-image {
     display: block;
     margin-bottom: 20px;
@@ -196,11 +215,13 @@ hr {
 
 .text {
   margin: 50px;
-  text-align: left;
-  width: 70%; }
+  text-align: left; }
   .text .title {
     margin-bottom: 20px;
     margin-top: 0; }
+  @media (min-width: 992px) {
+    .text {
+      width: 70%; } }
 
 .v-line {
   background-color: rgba(255, 255, 255, 0.5);
@@ -218,6 +239,11 @@ hr {
     margin-left: -10px;
     position: absolute;
     width: 20px; }
+  @media (max-width: 991px) {
+    .v-line {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center; } }
 
 .img-fluid {
   max-width: 100%; }
@@ -229,6 +255,7 @@ section {
   background-size: cover;
   color: #fff;
   min-height: 100vh;
+  padding-bottom: 30px;
   position: relative; }
 
 @supports (background-blend-mode: multiply) {
@@ -255,10 +282,10 @@ section {
       background-color: #c0392b; } }
 
 #intro {
-  background-image: url("../images/intro.jpg"); }
+  background-image: url("../images/air-ops.jpg"); }
 
 #car {
-  background-image: url("../images/car.png"); }
+  background-image: url("../images/car3.jpg"); }
 
 #numbersOne {
   background-attachment: local;
@@ -271,6 +298,15 @@ section {
 #numbersThree {
   background-attachment: local;
   background-image: linear-gradient(#10161c, black); }
+
+#ecuador {
+  background-image: url("../images/ecuador.jpg"); }
+
+#drc {
+  background-image: url("../images/team1.jpg"); }
+
+#iraq {
+  background-image: url("../images/iraq2.jpg"); }
 
 .country-numbers {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);

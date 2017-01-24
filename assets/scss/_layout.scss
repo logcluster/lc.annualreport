@@ -14,20 +14,22 @@ hr {
   &-row {
     display: flex;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
       flex-direction: column;
     }
 
-    &-1 > div {
-      width: 100%;
-    }
+    @include media-breakpoint-up(lg) {
+      &-1 > div {
+        width: 100%;
+      }
 
-    &-2 > div {
-      width: 50%;
-    }
+      &-2 > div {
+        width: 50%;
+      }
 
-    &-3 > div {
-      width: 33.333333%;
+      &-3 > div {
+        width: 33.333333%;
+      }
     }
   }
 
@@ -43,6 +45,10 @@ hr {
     &-stretch {
       align-items: stretch;
       justify-content: center;
+
+      @include media-breakpoint-down(sm) {
+        align-items: center;
+      }
     }
   }
 }
@@ -73,7 +79,7 @@ hr {
 .highlight {
   margin: 50px;
 
-  @include media-breakpoint-up(xs) {
+  @include media-breakpoint-up(lg) {
     width: 30%;
   }
 
@@ -103,7 +109,7 @@ hr {
     margin-top: 0;
   }
 
-  @include media-breakpoint-up(xs) {
+  @include media-breakpoint-up(lg) {
     width: 70%;
   }
 }
@@ -126,6 +132,10 @@ hr {
     margin-left: -10px;
     position: absolute;
     width: 20px;
+  }
+
+  @include media-breakpoint-down(md) {
+    align-self: center;
   }
 }
 

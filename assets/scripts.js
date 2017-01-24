@@ -46,3 +46,7 @@ $(".v-line").inViewport(function(px){
 $(".bar-chart-h").inViewport(function(px){
   if(px) $(this).addClass("stretch-h") ;
 });
+
+$(".text").inViewport(function(px){
+  if(px) $(this).addClass("fade-down") ;
+});
