@@ -39,6 +39,7 @@ p {
   font-family: 'Oswald', sans-serif;
   font-size: 2em;
   font-weight: 400;
+  margin-top: 0;
   text-transform: uppercase; }
   @media (min-width: 992px) {
     .title {
@@ -159,6 +160,7 @@ hr {
     .layout-row-2 > div {
       width: 50%; }
     .layout-row-3 > div {
+      padding: 0 10px;
       width: 33.333333%; } }
 
 .layout-column {
@@ -166,6 +168,14 @@ hr {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+
+.layout-space-between {
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.layout-end {
+  -ms-flex-align: end;
+      align-items: flex-end; }
 
 .layout-center {
   -ms-flex-align: center;
@@ -245,8 +255,21 @@ hr {
           -ms-grid-row-align: center;
           align-self: center; } }
 
+.centered {
+  padding: 100px 0;
+  width: 90%; }
+  @media (min-width: 992px) {
+    .centered {
+      padding: 200px 0;
+      width: 75%; } }
+
 .img-fluid {
   max-width: 100%; }
+
+.mobile-img {
+  position: absolute;
+  width: 250px;
+  z-index: 2; }
 
 section {
   background-attachment: fixed;
@@ -281,8 +304,38 @@ section {
     .overlay-red {
       background-color: #c0392b; } }
 
-#intro {
+.outcome {
+  clear: both; }
+  @media (min-width: 992px) {
+    .outcome {
+      width: 45%; } }
+  .outcome.text-right {
+    float: right; }
+  .outcome p {
+    font-weight: bold; }
+  .outcome h2 {
+    color: #EF3E35; }
+
+#cover {
   background-image: url("../images/air-ops.jpg"); }
+
+#intro {
+  background-attachment: local;
+  background-color: #c0392b; }
+
+#focus {
+  background-image: url("../images/focus.jpg"); }
+
+#outcome {
+  background-color: #25277a;
+  background-image: url("../images/outcome.svg"); }
+
+#partnerships {
+  background-image: url("../images/team1.jpg"); }
+
+#emergencies {
+  background-attachment: local;
+  background-color: #c0392b; }
 
 #car {
   background-image: url("../images/car3.jpg"); }
@@ -307,6 +360,15 @@ section {
 
 #iraq {
   background-image: url("../images/iraq2.jpg"); }
+
+#yemen {
+  background-image: url("../images/yemen.jpg"); }
+
+#syria {
+  background-image: url("../images/syria.jpg"); }
+
+#ukraine {
+  background-image: url("../images/ukraine.jpg"); }
 
 .country-numbers {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
@@ -375,9 +437,6 @@ section {
 .fade-down {
   animation: fade-down 2s cubic-bezier(0.65, 0.05, 0.36, 1);
   opacity: 1; }
-
-.blend {
-  animation: blend 2s cubic-bezier(0.65, 0.05, 0.36, 1); }
 
 .stretch {
   animation: stretch 2s cubic-bezier(0.65, 0.05, 0.36, 1); }

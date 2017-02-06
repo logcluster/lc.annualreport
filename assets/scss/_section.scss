@@ -46,11 +46,53 @@ section {
   }
 }
 
+// outcome content
+.outcome {
+  clear: both;
 
+  @include media-breakpoint-up(lg) {
+    width: 45%;
+  }
+
+  &.text-right {
+    float: right;
+  }
+
+  p {
+    font-weight: bold;
+  }
+
+  h2 {
+    color: #EF3E35;
+  }
+}
 
 // Background images
-#intro {
+#cover {
   background-image: url('../images/air-ops.jpg');
+}
+
+#intro {
+  background-attachment: local;
+  background-color: $lc-red;
+}
+
+#focus {
+  background-image: url('../images/focus.jpg');
+}
+
+#outcome {
+  background-color: darken(#3134A1, 10%);
+  background-image: url('../images/outcome.svg');
+}
+
+#partnerships {
+  background-image: url('../images/team1.jpg');
+}
+
+#emergencies {
+  background-attachment: local;
+  background-color: $lc-red;
 }
 
 #car {
@@ -82,6 +124,18 @@ section {
 
 #iraq {
   background-image: url('../images/iraq2.jpg');
+}
+
+#yemen {
+  background-image: url('../images/yemen.jpg');
+}
+
+#syria {
+  background-image: url('../images/syria.jpg');
+}
+
+#ukraine {
+  background-image: url('../images/ukraine.jpg');
 }
 
 

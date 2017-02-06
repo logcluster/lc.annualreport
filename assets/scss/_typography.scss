@@ -23,6 +23,7 @@ p {
   font-family: 'Oswald', sans-serif;
   font-size: 2em;
   font-weight: 400;
+  margin-top: 0;
   text-transform: uppercase;
 
   @include media-breakpoint-up(lg) {

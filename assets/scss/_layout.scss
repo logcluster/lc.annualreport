@@ -28,6 +28,7 @@ hr {
       }
 
       &-3 > div {
+        padding: 0 10px;
         width: 33.333333%;
       }
     }
@@ -36,6 +37,14 @@ hr {
   &-column {
     display: flex;
     flex-direction: column;
+  }
+
+  &-space-between {
+    justify-content: space-between;
+  }
+
+  &-end {
+    align-items: flex-end;
   }
 
   &-center {
@@ -139,7 +148,24 @@ hr {
   }
 }
 
+// spacing
+.centered {
+  padding: 100px 0;
+  width: 90%;
+
+  @include media-breakpoint-up(lg) {
+    padding: 200px 0;
+    width: 75%;
+  }
+}
+
 // responsive image
 .img-fluid {
   max-width: 100%;
+}
+
+.mobile-img {
+  position: absolute;
+  width: 250px;
+  z-index: 2;
 }
