@@ -19,6 +19,10 @@ p {
   @include color($dimmed);
 }
 
+.light {
+  font-weight: 300;
+}
+
 .title {
   font-family: 'Oswald', sans-serif;
   font-size: 2em;
