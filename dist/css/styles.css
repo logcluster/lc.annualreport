@@ -130,17 +130,29 @@ h1 {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-  .nav-item-circle {
-    transition: transform 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    height: 16px;
-    margin-bottom: 16px;
-    width: 16px; }
-    .nav-item-circle:hover {
-      transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
-      background: #c0392b;
-      transform: scale(1.2); }
+  .nav-item {
+    margin-bottom: 16px; }
+    .nav-item-circle {
+      transition: transform 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      display: inline-block;
+      height: 16px;
+      vertical-align: bottom;
+      width: 16px; }
+      .nav-item-circle:hover {
+        transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+        background: #c0392b;
+        transform: scale(1.2); }
+    .nav-item-link {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 12px;
+      text-decoration: none; }
+      .nav-item-link span {
+        opacity: 0; }
+      .nav-item-link:hover span {
+        transition: opacity 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+        opacity: 1; }
 
 body {
   margin: 0;
@@ -326,23 +338,6 @@ section {
   background-attachment: local;
   background-color: #c0392b; }
 
-#focus {
-  background-image: url("../images/focus.jpg"); }
-
-#outcome {
-  background-color: #25277a;
-  background-image: url("../images/outcome.svg"); }
-
-#partnerships {
-  background-image: url("../images/team1.jpg"); }
-
-#emergencies {
-  background-attachment: local;
-  background-color: #c0392b; }
-
-#car {
-  background-image: url("../images/car3.jpg"); }
-
 #numbersOne {
   background-attachment: local;
   background-image: linear-gradient(#34495e, #22303d); }
@@ -355,23 +350,59 @@ section {
   background-attachment: local;
   background-image: linear-gradient(#10161c, black); }
 
+#focus {
+  background-image: url("../images/local-leadership.png"); }
+
+#outcome {
+  background-color: #25277a;
+  background-image: url("../images/outcome.svg"); }
+
+#partnerships {
+  background-image: url("../images/partnership.jpg"); }
+
+#emergencies {
+  background-attachment: local;
+  background-color: #c0392b; }
+
+#car {
+  background-image: url("../images/car3.jpg"); }
+
+#drc {
+  background-image: url("../images/drc.jpg"); }
+
 #ecuador {
   background-image: url("../images/ecuador.jpg"); }
 
-#drc {
-  background-image: url("../images/team1.jpg"); }
+#ethiopia {
+  background-image: url("../images/ethiopia.jpg"); }
+
+#fiji {
+  background-image: url("../images/fiji.jpg"); }
+
+#haiti {
+  background-image: url("../images/haiti.jpg"); }
 
 #iraq {
   background-image: url("../images/iraq2.jpg"); }
 
-#yemen {
-  background-image: url("../images/yemen.jpg"); }
+#somalia {
+  background-image: url("../images/somalia.jpg"); }
 
 #syria {
   background-image: url("../images/syria.jpg"); }
 
+#southsudan {
+  background-image: url("../images/focus.jpg"); }
+
 #ukraine {
   background-image: url("../images/ukraine.jpg"); }
+
+#yemen {
+  background-image: url("../images/yemen.jpg"); }
+
+#thankyou {
+  background-attachment: local;
+  background-color: #c0392b; }
 
 .country-numbers {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);

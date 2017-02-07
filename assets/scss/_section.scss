@@ -77,28 +77,6 @@ section {
   background-color: $lc-red;
 }
 
-#focus {
-  background-image: url('../images/focus.jpg');
-}
-
-#outcome {
-  background-color: darken(#3134A1, 10%);
-  background-image: url('../images/outcome.svg');
-}
-
-#partnerships {
-  background-image: url('../images/team1.jpg');
-}
-
-#emergencies {
-  background-attachment: local;
-  background-color: $lc-red;
-}
-
-#car {
-  background-image: url('../images/car3.jpg');
-}
-
 #numbersOne {
   background-attachment: local;
   background-image: linear-gradient($lc-blue, darken($lc-blue, 10%));
@@ -114,28 +92,75 @@ section {
   background-image: linear-gradient(darken($lc-blue, 20%), darken($lc-blue, 30%));
 }
 
+#focus {
+  background-image: url('../images/local-leadership.png');
+}
+
+#outcome {
+  background-color: darken(#3134A1, 10%);
+  background-image: url('../images/outcome.svg');
+}
+
+#partnerships {
+  background-image: url('../images/partnership.jpg');
+}
+
+#emergencies {
+  background-attachment: local;
+  background-color: $lc-red;
+}
+
+#car {
+  background-image: url('../images/car3.jpg');
+}
+
+#drc {
+  background-image: url('../images/drc.jpg');
+}
+
 #ecuador {
   background-image: url('../images/ecuador.jpg');
 }
 
-#drc {
-  background-image: url('../images/team1.jpg');
+#ethiopia {
+  background-image: url('../images/ethiopia.jpg');
+}
+
+#fiji {
+  background-image: url('../images/fiji.jpg');
+}
+
+#haiti {
+  background-image: url('../images/haiti.jpg');
 }
 
 #iraq {
   background-image: url('../images/iraq2.jpg');
 }
 
-#yemen {
-  background-image: url('../images/yemen.jpg');
+#somalia {
+  background-image: url('../images/somalia.jpg');
 }
 
 #syria {
   background-image: url('../images/syria.jpg');
 }
 
+#southsudan {
+  background-image: url('../images/focus.jpg');
+}
+
 #ukraine {
   background-image: url('../images/ukraine.jpg');
+}
+
+#yemen {
+  background-image: url('../images/yemen.jpg');
+}
+
+#thankyou {
+  background-attachment: local;
+  background-color: $lc-red;
 }
 
 
