@@ -59,6 +59,14 @@ hr {
         align-items: center;
       }
     }
+
+    &-start {
+      align-items: flex-start;
+
+      @include media-breakpoint-down(sm) {
+        align-items: center;
+      }
+    }
   }
 }
 
@@ -72,6 +80,16 @@ hr {
     @include media-breakpoint-up(md) {
       margin: 0 auto;
       width: 90%;
+    }
+  }
+
+  &-left {
+    margin: 20px;
+    width: 90%;
+
+    @include media-breakpoint-up(md) {
+      margin-left: 10%;
+      width: 30%;
     }
   }
 }

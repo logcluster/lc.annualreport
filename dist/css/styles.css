@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700");
-@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
 .text-left {
   text-align: left; }
   @media (max-width: 991px) {
@@ -28,6 +28,9 @@ p {
 
 .red {
   color: #c0392b; }
+
+.black {
+  color: #000; }
 
 .blue {
   color: #34495e; }
@@ -78,6 +81,16 @@ h1 {
   font-size: 40px;
   font-weight: 900;
   letter-spacing: 2px; }
+
+.operations {
+  color: #c0392b;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
 
 .boxed {
   border: 5px solid #fff;
@@ -206,6 +219,13 @@ hr {
       .layout-center-stretch {
         -ms-flex-align: center;
             align-items: center; } }
+  .layout-center-start {
+    -ms-flex-align: start;
+        align-items: flex-start; }
+    @media (max-width: 767px) {
+      .layout-center-start {
+        -ms-flex-align: center;
+            align-items: center; } }
 
 .slide-center {
   margin: 20px;
@@ -214,6 +234,14 @@ hr {
     .slide-center {
       margin: 0 auto;
       width: 90%; } }
+
+.slide-left {
+  margin: 20px;
+  width: 90%; }
+  @media (min-width: 768px) {
+    .slide-left {
+      margin-left: 10%;
+      width: 30%; } }
 
 .logo {
   display: block;
@@ -361,8 +389,8 @@ section {
   background-image: url("../images/partnership.jpg"); }
 
 #emergencies {
-  background-attachment: local;
-  background-color: #c0392b; }
+  background-color: #fff;
+  background-image: url("../images/operations.svg"); }
 
 #car {
   background-image: url("../images/car3.jpg"); }

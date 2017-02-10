@@ -11,6 +11,10 @@ p {
   @include color($lc-red);
 }
 
+.black {
+  @include color($black);
+}
+
 .blue {
   @include color($lc-blue);
 }
@@ -79,6 +83,17 @@ h1 {
   font-size: 40px;
   font-weight: 900;
   letter-spacing: 2px;
+}
+
+.operations {
+  color: $lc-red;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 // Text styles
