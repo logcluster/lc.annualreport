@@ -15,7 +15,9 @@
 
     &-circle {
       @include transition(transform, .3s);
-      background-color: $dimmed;
+      // background-color: rgba(192, 57, 43, .5);
+      background-color: rgba(0, 0, 0, .5);
+      border: 1px solid $dimmed;
       border-radius: 50%;
       display: inline-block;
       height: 16px;

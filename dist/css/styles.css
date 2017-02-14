@@ -147,7 +147,8 @@ h1 {
     margin-bottom: 16px; }
     .nav-item-circle {
       transition: transform 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 50%;
       display: inline-block;
       height: 16px;
