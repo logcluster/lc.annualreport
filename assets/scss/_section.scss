@@ -179,9 +179,10 @@ section {
 // country funded percentage
 .fund {
   &-percentage {
+    height: 170px;
+    margin: 0 auto;
     position: relative;
     text-align: center;
-    margin: 0 auto;
     width: 170px;
 
     &-label {
@@ -190,10 +191,13 @@ section {
   }
 
   &-value {
+    display: block;
     font-family: $serif;
     font-size: 2.5em;
     font-weight: 900;
+    left: 35px;
     position: absolute;
+    top: 65px;
     z-index: 1;
   }
 }

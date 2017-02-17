@@ -112,7 +112,9 @@ h1 {
 .link {
   bottom: 50px;
   color: $dimmed;
+  left: 50%;
   letter-spacing: 5px;
+  margin-left: -85px;
   position: absolute;
   text-align: center;
   text-decoration: none;

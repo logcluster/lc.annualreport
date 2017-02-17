@@ -105,7 +105,9 @@ h1 {
 .link {
   bottom: 50px;
   color: rgba(255, 255, 255, 0.5);
+  left: 50%;
   letter-spacing: 5px;
+  margin-left: -85px;
   position: absolute;
   text-align: center;
   text-decoration: none;
@@ -311,7 +313,10 @@ hr {
   max-width: 100%; }
 
 .mobile-img {
+  left: 50%;
+  margin-left: -125px;
   position: absolute;
+  top: 100px;
   width: 250px;
   z-index: 2; }
 
@@ -441,18 +446,22 @@ section {
   margin-bottom: 10px; }
 
 .fund-percentage {
+  height: 170px;
+  margin: 0 auto;
   position: relative;
   text-align: center;
-  margin: 0 auto;
   width: 170px; }
   .fund-percentage-label {
     margin-top: 10px; }
 
 .fund-value {
+  display: block;
   font-family: "Droid Serif", Georgia, serif;
   font-size: 2.5em;
   font-weight: 900;
+  left: 35px;
   position: absolute;
+  top: 65px;
   z-index: 1; }
 
 @keyframes fade-down {
