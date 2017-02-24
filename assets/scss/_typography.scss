@@ -1,9 +1,10 @@
 body {
   font-family: $sans-serif;
+  font-size: 14px;
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 // color classes
@@ -58,6 +59,7 @@ p {
   display: block;
   font-family: $sans-serif;
   font-weight: 300;
+  line-height: 1.6;
   margin-bottom: 20px;
   text-transform: uppercase;
 
@@ -88,7 +90,7 @@ h1 {
 .operations {
   color: $lc-red;
   font-family: 'Oswald', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 200;
   letter-spacing: 2px;
   list-style-type: none;
@@ -101,7 +103,9 @@ h1 {
   border: 5px solid $white;
   display: inline-block;
   font-family: $serif;
-  margin: 40px 0;
+  line-height: 1.6;
+  margin-bottom: 0;
+  margin-top: 40px;
   padding: 20px;
 }
 

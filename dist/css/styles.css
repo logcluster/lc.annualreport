@@ -21,10 +21,11 @@
       text-align: center; } }
 
 body {
-  font-family: "Lato", Arial, sans-serif; }
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 14px; }
 
 p {
-  line-height: 1.6; }
+  line-height: 1.4; }
 
 .red {
   color: #c0392b; }
@@ -64,6 +65,7 @@ p {
   display: block;
   font-family: "Lato", Arial, sans-serif;
   font-weight: 300;
+  line-height: 1.6;
   margin-bottom: 20px;
   text-transform: uppercase; }
   .label-red {
@@ -85,7 +87,7 @@ h1 {
 .operations {
   color: #c0392b;
   font-family: 'Oswald', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 200;
   letter-spacing: 2px;
   list-style-type: none;
@@ -96,7 +98,9 @@ h1 {
   border: 5px solid #fff;
   display: inline-block;
   font-family: "Droid Serif", Georgia, serif;
-  margin: 40px 0;
+  line-height: 1.6;
+  margin-bottom: 0;
+  margin-top: 40px;
   padding: 20px; }
 
 .text-shadow {
@@ -316,9 +320,14 @@ hr {
   left: 50%;
   margin-left: -125px;
   position: absolute;
-  top: 100px;
   width: 250px;
   z-index: 2; }
+  @media (max-width: 575px) {
+    .mobile-img {
+      top: 100px; } }
+
+.m-a-0 {
+  margin: 0; }
 
 section {
   background-attachment: fixed;
@@ -446,11 +455,11 @@ section {
   margin-bottom: 10px; }
 
 .fund-percentage {
-  height: 170px;
+  height: 120px;
   margin: 0 auto;
   position: relative;
   text-align: center;
-  width: 170px; }
+  width: 120px; }
   .fund-percentage-label {
     margin-top: 10px; }
 
@@ -459,10 +468,12 @@ section {
   font-family: "Droid Serif", Georgia, serif;
   font-size: 2.5em;
   font-weight: 900;
-  left: 35px;
   position: absolute;
-  top: 65px;
   z-index: 1; }
+  @supports not (justify-content: center) {
+    .fund-value {
+      left: 35px;
+      top: 65px; } }
 
 @keyframes fade-down {
   from {
