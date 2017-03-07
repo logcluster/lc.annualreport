@@ -236,7 +236,8 @@ hr {
 
 .slide-center {
   margin: 20px;
-  text-align: center; }
+  text-align: center;
+  z-index: 3; }
   @media (min-width: 768px) {
     .slide-center {
       margin: 0 auto;
@@ -320,11 +321,9 @@ hr {
   left: 50%;
   margin-left: -125px;
   position: absolute;
+  top: 100px;
   width: 250px;
   z-index: 2; }
-  @media (max-width: 575px) {
-    .mobile-img {
-      top: 100px; } }
 
 .m-a-0 {
   margin: 0; }
@@ -339,6 +338,20 @@ section {
   padding-bottom: 30px;
   position: relative; }
 
+.overlay {
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  opacity: .7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+  .overlay-blue {
+    background-color: #000; }
+  .overlay-red {
+    background-color: #c0392b; }
+
 @supports (background-blend-mode: multiply) {
   .blend {
     background-blend-mode: multiply;
@@ -346,21 +359,9 @@ section {
     .blend-blue {
       background-color: #34495e; }
     .blend-red {
-      background-color: #c0392b; } }
-
-@supports not (background-blend-mode: multiply) {
+      background-color: #c0392b; }
   .overlay {
-    background-color: #000;
-    bottom: 0;
-    opacity: .5;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2; }
-    .overlay-blue {
-      background-color: #34495e; }
-    .overlay-red {
-      background-color: #c0392b; } }
+    display: none; } }
 
 .outcome {
   clear: both; }
@@ -468,12 +469,10 @@ section {
   font-family: "Droid Serif", Georgia, serif;
   font-size: 2.5em;
   font-weight: 900;
+  left: 25px;
   position: absolute;
+  top: 40px;
   z-index: 1; }
-  @supports not (justify-content: center) {
-    .fund-value {
-      left: 35px;
-      top: 65px; } }
 
 @keyframes fade-down {
   from {

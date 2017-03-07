@@ -9,6 +9,25 @@ section {
   position: relative;
 }
 
+.overlay {
+  background-color: $black;
+  bottom: 0;
+  left: 0;
+  opacity: .7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  &-blue {
+    background-color: $black;
+  }
+
+  &-red {
+    background-color: $lc-red;
+  }
+}
+
 // background blend mode
 @supports (background-blend-mode: multiply) {
   .blend {
@@ -23,26 +42,9 @@ section {
       background-color: $lc-red;
     }
   }
-}
 
-// overlay when background blend is not supported
-@supports not (background-blend-mode: multiply) {
   .overlay {
-    background-color: $black;
-    bottom: 0;
-    opacity: .5;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-
-    &-blue {
-      background-color: $lc-blue;
-    }
-
-    &-red {
-      background-color: $lc-red;
-    }
+    display: none;
   }
 }
 
@@ -195,12 +197,9 @@ section {
     font-family: $serif;
     font-size: 2.5em;
     font-weight: 900;
+    left: 25px;
     position: absolute;
-    z-index: 1;
-
-    @supports not (justify-content: center) {
-      left: 35px;
-      top: 65px;
-    }
+    top: 40px;
+    z-index: 1;    
   }
 }
