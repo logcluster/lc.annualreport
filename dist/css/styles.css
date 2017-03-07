@@ -328,6 +328,10 @@ hr {
 .m-a-0 {
   margin: 0; }
 
+.chart {
+  height: 500px;
+  width: 100%; }
+
 section {
   background-attachment: fixed;
   background-position: center;
