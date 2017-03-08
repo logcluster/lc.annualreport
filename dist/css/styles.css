@@ -333,7 +333,6 @@ hr {
   width: 100%; }
 
 section {
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -341,6 +340,10 @@ section {
   min-height: 100vh;
   padding-bottom: 30px;
   position: relative; }
+
+@media-breakpoint-up (md) {
+  section {
+    background-attachment: fixed; } }
 
 .overlay {
   background-color: #000;

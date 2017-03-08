@@ -1,5 +1,4 @@
 section {
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,6 +6,10 @@ section {
   min-height: 100vh;
   padding-bottom: 30px;
   position: relative;
+
+  @media-breakpoint-up(md) {
+    background-attachment: fixed;
+  }
 }
 
 .overlay {
@@ -200,6 +203,6 @@ section {
     left: 25px;
     position: absolute;
     top: 40px;
-    z-index: 1;    
+    z-index: 1;
   }
 }
