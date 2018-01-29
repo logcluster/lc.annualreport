@@ -139,6 +139,10 @@ h1 {
     color: #3b5998; }
   .icon-twitter {
     color: #1da1f2; }
+  .icon-instagram {
+    color: #833ab4; }
+  .icon-linkedin {
+    color: #0077b5; }
 
 .nav {
   left: 30px;
@@ -177,6 +181,9 @@ h1 {
 body {
   margin: 0;
   padding: 0; }
+
+.mb-0 {
+  margin-bottom: 0; }
 
 hr {
   border-bottom: 1px;

@@ -3,21 +3,21 @@ body {
   padding: 0;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
 // divider styles
 hr {
   border-bottom: 1px;
   border-color: rgba(255, 255, 255, .5);
 }
-
 // Flex layout
 .layout {
   &-row {
     display: flex;
-
     @include media-breakpoint-down(md) {
       flex-direction: column;
     }
-
     @include media-breakpoint-up(lg) {
       &-1 > div {
         width: 100%;
@@ -54,7 +54,6 @@ hr {
     &-stretch {
       align-items: stretch;
       justify-content: center;
-
       @include media-breakpoint-down(sm) {
         align-items: center;
       }
@@ -62,14 +61,12 @@ hr {
 
     &-start {
       align-items: flex-start;
-
       @include media-breakpoint-down(sm) {
         align-items: center;
       }
     }
   }
 }
-
 // slide section
 .slide {
   // align center
@@ -77,7 +74,6 @@ hr {
     margin: 20px;
     text-align: center;
     z-index: 3;
-
     @include media-breakpoint-up(md) {
       margin: 0 auto;
       width: 90%;
@@ -87,14 +83,12 @@ hr {
   &-left {
     margin: 20px;
     width: 90%;
-
     @include media-breakpoint-up(md) {
       margin-left: 10%;
       width: 30%;
     }
   }
 }
-
 // Logistics Cluster logo styles and dimensions
 .logo {
   display: block;
@@ -102,11 +96,9 @@ hr {
   max-width: 100%;
   width: 390px;
 }
-
 // highlight section
 .highlight {
   margin: 50px;
-
   @include media-breakpoint-up(lg) {
     width: 30%;
   }
@@ -126,7 +118,6 @@ hr {
     width: 48px;
   }
 }
-
 // text section
 .text {
   margin: 50px;
@@ -136,12 +127,10 @@ hr {
     margin-bottom: 20px;
     margin-top: 0;
   }
-
   @include media-breakpoint-up(lg) {
     width: 70%;
   }
 }
-
 // vertical line
 .v-line {
   background-color: $dimmed;
@@ -161,23 +150,19 @@ hr {
     position: absolute;
     width: 20px;
   }
-
   @include media-breakpoint-down(md) {
     align-self: center;
   }
 }
-
 // spacing
 .centered {
   padding: 100px 0;
   width: 90%;
-
   @include media-breakpoint-up(lg) {
     padding: 200px 0;
     width: 75%;
   }
 }
-
 // responsive image
 .img-fluid {
   max-width: 100%;
@@ -191,12 +176,10 @@ hr {
   width: 250px;
   z-index: 2;
 }
-
 // spacing
 .m-a-0 {
   margin: 0;
 }
-
 // Chart fixes
 .chart {
   height: 500px;
