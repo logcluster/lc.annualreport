@@ -185,6 +185,14 @@ body {
 .mb-0 {
   margin-bottom: 0; }
 
+@media (min-width: 768px) {
+  .hidden-md-up {
+    display: none; } }
+
+@media (max-width: 991px) {
+  .hidden-md-down {
+    display: none; } }
+
 hr {
   border-bottom: 1px;
   border-color: rgba(255, 255, 255, 0.5); }
@@ -390,7 +398,7 @@ section {
     color: #EF3E35; }
 
 #cover {
-  background-image: url("../images/air-ops.jpg"); }
+  background-image: url("../images/2017/Madagascar.JPG"); }
 
 #intro {
   background-attachment: local;
@@ -409,24 +417,24 @@ section {
   background-image: linear-gradient(#10161c, black); }
 
 #focus {
-  background-image: url("../images/local-leadership.png"); }
+  background-image: url("../images/2017/2.jpg"); }
 
 #outcome {
   background-color: #25277a;
   background-image: url("../images/outcome.svg"); }
 
 #partnerships {
-  background-image: url("../images/partnership.jpg"); }
+  background-image: url("../images/2017/7.jpg"); }
 
 #emergencies {
   background-color: #fff;
   background-image: url("../images/operations.svg"); }
 
 #car {
-  background-image: url("../images/car3.jpg"); }
+  background-image: url("../images/2017/car.JPG"); }
 
 #drc {
-  background-image: url("../images/drc.jpg"); }
+  background-image: url("../images/2017/drc.png"); }
 
 #ecuador {
   background-image: url("../images/ecuador.jpg"); }
@@ -444,22 +452,22 @@ section {
   background-image: url("../images/iraq2.jpg"); }
 
 #nigeria {
-  background-image: url("../images/nigeria.jpg"); }
+  background-image: url("../images/2017/nigeria-2.jpg"); }
 
 #somalia {
-  background-image: url("../images/somalia.jpg"); }
+  background-image: url("../images/2017/somalia-2.jpg"); }
 
 #syria {
   background-image: url("../images/syria.jpg"); }
 
 #southsudan {
-  background-image: url("../images/focus.jpg"); }
+  background-image: url("../images/2017/ssd.jpg"); }
 
 #ukraine {
   background-image: url("../images/ukraine.jpg"); }
 
 #yemen {
-  background-image: url("../images/yemen.jpg"); }
+  background-image: url("../images/2017/yemen-2.jpg"); }
 
 #thankyou {
   background-attachment: local;

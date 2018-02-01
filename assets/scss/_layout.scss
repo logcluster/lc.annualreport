@@ -6,6 +6,21 @@ body {
 .mb-0 {
   margin-bottom: 0;
 }
+
+// visibility classes
+
+.hidden-md-up {
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.hidden-md-down {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
 // divider styles
 hr {
   border-bottom: 1px;
