@@ -197,6 +197,36 @@ hr {
   border-bottom: 1px;
   border-color: rgba(255, 255, 255, 0.5); }
 
+.grid-operation {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 100px;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 200px auto auto;
+      grid-template-rows: 200px auto auto;
+  margin: 0 auto;
+  width: 90%; }
+  .grid-operation .category {
+    -ms-flex-align: center;
+        align-items: center;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-column: 1 / 3;
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-align: center; }
+  .grid-operation .numbers {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 2;
+        grid-column: 2;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr; }
+
 .layout-row {
   display: -ms-flexbox;
   display: flex; }
@@ -274,33 +304,31 @@ hr {
   right: 100px;
   top: 0;
   width: 390px; }
+  @media (max-width: 991px) {
+    .logo {
+      margin-right: -94px;
+      right: 50%;
+      top: 0;
+      width: 50%; } }
 
-.highlight {
-  margin: 50px; }
-  @media (min-width: 992px) {
-    .highlight {
-      width: 30%; } }
-  .highlight-image {
-    display: block;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    width: 390px; }
-  .highlight-icon {
-    margin-right: 10px;
-    height: 48px;
-    width: 48px; }
+.highlight-image {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 390px; }
+
+.highlight-icon {
+  margin-right: 10px;
+  height: 48px;
+  width: 48px; }
 
 .text {
-  margin: 50px;
   text-align: left; }
   .text .title {
     margin-bottom: 20px;
     margin-top: 0; }
-  @media (min-width: 992px) {
-    .text {
-      width: 70%; } }
 
 .v-line {
   background-color: rgba(255, 255, 255, 0.5);
@@ -354,6 +382,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
   color: #fff;
   min-height: 100vh;
   padding-bottom: 30px;
@@ -402,6 +431,11 @@ section {
 
 #cover {
   background-image: url("../images/2017/Madagascar.JPG"); }
+  #cover .slide-center {
+    margin-top: 400px; }
+    @media (max-width: 991px) {
+      #cover .slide-center {
+        margin-top: 300px; } }
 
 #intro {
   background-attachment: local;
@@ -427,7 +461,7 @@ section {
   background-image: url("../images/outcome.svg"); }
 
 #partnerships {
-  background-image: url("../images/2017/7.jpg"); }
+  background-image: url("../images/2017/yemen-2.jpg"); }
 
 #emergencies {
   background-color: #fff;
@@ -441,18 +475,6 @@ section {
 
 #drc {
   background-image: url("../images/2017/drc.png"); }
-
-#ecuador {
-  background-image: url("../images/ecuador.jpg"); }
-
-#ethiopia {
-  background-image: url("../images/ethiopia.jpg"); }
-
-#fiji {
-  background-image: url("../images/fiji.jpg"); }
-
-#haiti {
-  background-image: url("../images/haiti.jpg"); }
 
 #iraq {
   background-image: url("../images/iraq2.JPG"); }
@@ -476,7 +498,7 @@ section {
   background-image: url("../images/ukraine.jpg"); }
 
 #yemen {
-  background-image: url("../images/2017/yemen-2.jpg"); }
+  background-image: url("../images/2017/yemen.jpg"); }
 
 #thankyou {
   background-attachment: local;
@@ -487,12 +509,13 @@ section {
   margin-bottom: 10px; }
 
 .fund-percentage {
-  height: 120px;
+  height: 150px;
   margin: 0 auto;
   position: relative;
   text-align: center;
-  width: 120px; }
+  width: 150px; }
   .fund-percentage-label {
+    margin-bottom: 0;
     margin-top: 10px; }
 
 .fund-value {
@@ -502,7 +525,7 @@ section {
   font-weight: 900;
   left: 25px;
   position: absolute;
-  top: 40px;
+  top: 50px;
   z-index: 1; }
 
 @keyframes fade-down {

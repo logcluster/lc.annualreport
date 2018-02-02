@@ -30,7 +30,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11",
     "jquery": "^3.1.1",
-    "ngrok": "^2.2.25",
+    "jquery-scrollify": "^1.0.19",
     "scrollmagic": "^2.0.5"
   }
 }

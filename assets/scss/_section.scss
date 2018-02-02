@@ -2,6 +2,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
   color: $white;
   min-height: 100vh;
   padding-bottom: 30px;
@@ -75,6 +76,14 @@ section {
 // Background images
 #cover {
   background-image: url('../images/2017/Madagascar.JPG');
+
+  .slide-center {
+    margin-top: 400px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 300px;
+    }
+  }
 }
 
 #intro {
@@ -107,7 +116,7 @@ section {
 }
 
 #partnerships {
-  background-image: url('../images/2017/7.jpg');
+  background-image: url('../images/2017/yemen-2.jpg');
 }
 
 #emergencies {
@@ -125,22 +134,6 @@ section {
 
 #drc {
   background-image: url('../images/2017/drc.png');
-}
-
-#ecuador {
-  background-image: url('../images/ecuador.jpg');
-}
-
-#ethiopia {
-  background-image: url('../images/ethiopia.jpg');
-}
-
-#fiji {
-  background-image: url('../images/fiji.jpg');
-}
-
-#haiti {
-  background-image: url('../images/haiti.jpg');
 }
 
 #iraq {
@@ -172,7 +165,7 @@ section {
 }
 
 #yemen {
-  background-image: url('../images/2017/yemen-2.jpg');
+  background-image: url('../images/2017/yemen.jpg');
 }
 
 #thankyou {
@@ -192,13 +185,14 @@ section {
 // country funded percentage
 .fund {
   &-percentage {
-    height: 120px;
+    height: 150px;
     margin: 0 auto;
     position: relative;
     text-align: center;
-    width: 120px;
+    width: 150px;
 
     &-label {
+      margin-bottom: 0;
       margin-top: 10px;
     }
   }
@@ -210,7 +204,7 @@ section {
     font-weight: 900;
     left: 25px;
     position: absolute;
-    top: 40px;
+    top: 50px;
     z-index: 1;
   }
 }

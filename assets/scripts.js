@@ -1,5 +1,6 @@
 var jQuery = require('../node_modules/jquery/dist/jquery.min.js');
 var $ = require('../node_modules/jquery/dist/jquery.min.js');
+// include ../node_modules/jquery/dist/jquery.min.js
 
 // Plugin @RokoCB :: Return the visible amount of px
 // of any element currently in viewport.
