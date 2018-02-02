@@ -270,6 +270,9 @@ hr {
   display: block;
   margin: 20px auto;
   max-width: 100%;
+  position: absolute;
+  right: 100px;
+  top: 0;
   width: 390px; }
 
 .highlight {
@@ -429,6 +432,9 @@ section {
 #emergencies {
   background-color: #fff;
   background-image: url("../images/operations.svg"); }
+
+#bangladesh {
+  background-image: url("../images/2017/bangladesh-2.jpg"); }
 
 #car {
   background-image: url("../images/2017/car.JPG"); }
