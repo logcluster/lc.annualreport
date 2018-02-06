@@ -52,6 +52,12 @@ hr {
     grid-column: 2;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .operation-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 // Flex layout

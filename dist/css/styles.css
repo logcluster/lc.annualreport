@@ -226,6 +226,13 @@ hr {
         grid-column: 2;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr; }
+  .grid-operation .operation-right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
 
 .layout-row {
   display: -ms-flexbox;
