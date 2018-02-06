@@ -185,11 +185,25 @@ section {
 // country funded percentage
 .fund {
   &-percentage {
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 150px;
     margin: 0 auto;
     position: relative;
     text-align: center;
     width: 150px;
+
+    &-100 {
+      background-image: url('../images/100-fund.svg');
+    }
+
+    &-90 {
+      background-image: url('../images/93-fund.svg');
+    }
+
+    &-50 {
+      background-image: url('../images/50-fund.svg');
+    }
 
     &-label {
       margin-bottom: 0;
@@ -202,9 +216,5 @@ section {
     font-family: $serif;
     font-size: 2.5em;
     font-weight: 900;
-    left: 25px;
-    position: absolute;
-    top: 50px;
-    z-index: 1;
   }
 }

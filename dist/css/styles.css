@@ -519,11 +519,19 @@ section {
   margin-bottom: 10px; }
 
 .fund-percentage {
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 150px;
   margin: 0 auto;
   position: relative;
   text-align: center;
   width: 150px; }
+  .fund-percentage-100 {
+    background-image: url("../images/100-fund.svg"); }
+  .fund-percentage-90 {
+    background-image: url("../images/93-fund.svg"); }
+  .fund-percentage-50 {
+    background-image: url("../images/50-fund.svg"); }
   .fund-percentage-label {
     margin-bottom: 0;
     margin-top: 10px; }
@@ -532,11 +540,7 @@ section {
   display: block;
   font-family: "Droid Serif", Georgia, serif;
   font-size: 2.5em;
-  font-weight: 900;
-  left: 25px;
-  position: absolute;
-  top: 50px;
-  z-index: 1; }
+  font-weight: 900; }
 
 @keyframes fade-down {
   from {
