@@ -55,6 +55,12 @@ hr {
       display: grid;
       grid-column: 2;
       grid-template-columns: 1fr 1fr 1fr;
+
+      small {
+        grid-column: 1 / 4;
+        margin-top: 20px;
+        text-align: center;
+      }
     }
   }
 
