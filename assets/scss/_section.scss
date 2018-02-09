@@ -69,7 +69,7 @@ section {
   }
 
   h2 {
-    color: #EF3E35;
+    color: $white;
   }
 }
 
@@ -111,8 +111,9 @@ section {
 }
 
 #outcome {
-  background-color: darken(#3134A1, 10%);
-  background-image: url('../images/outcome.svg');
+  background-color: darken($preparedness, 30%);
+  background-image: url('../images/outcome-2017.svg');
+  background-size: contain;
 }
 
 #partnerships {
