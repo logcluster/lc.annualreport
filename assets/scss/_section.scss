@@ -54,22 +54,24 @@ section {
 
 // outcome content
 .outcome {
-  clear: both;
 
-  @include media-breakpoint-up(lg) {
-    width: 45%;
-  }
-
-  &.text-right {
-    float: right;
+  &-grid {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr;
   }
 
   p {
     font-weight: bold;
+    text-align: left;
   }
 
   h2 {
     color: $white;
+  }
+
+  &-row {
+    padding-top: 150px;
   }
 }
 
@@ -114,6 +116,7 @@ section {
   background-color: darken($preparedness, 30%);
   background-image: url('../images/outcome-2017.svg');
   background-size: contain;
+  background-position: -10vw -2vh;
 }
 
 #partnerships {

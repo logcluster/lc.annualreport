@@ -460,17 +460,22 @@ section {
   .overlay {
     display: none; } }
 
-.outcome {
-  clear: both; }
-  @media (min-width: 992px) {
-    .outcome {
-      width: 45%; } }
-  .outcome.text-right {
-    float: right; }
-  .outcome p {
-    font-weight: bold; }
-  .outcome h2 {
-    color: #fff; }
+.outcome-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 40px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; }
+
+.outcome p {
+  font-weight: bold;
+  text-align: left; }
+
+.outcome h2 {
+  color: #fff; }
+
+.outcome-row {
+  padding-top: 150px; }
 
 #cover {
   background-image: url("../images/2017/Madagascar.JPG"); }
@@ -502,7 +507,8 @@ section {
 #outcome {
   background-color: #0a2a27;
   background-image: url("../images/outcome-2017.svg");
-  background-size: contain; }
+  background-size: contain;
+  background-position: -10vw -2vh; }
 
 #partnerships {
   background-image: url("../images/2017/yemen-2.jpg"); }
