@@ -424,6 +424,7 @@ hr {
 section {
   background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   box-sizing: border-box;
   color: #fff;
@@ -433,7 +434,8 @@ section {
 
 @media-breakpoint-up (md) {
   section {
-    background-attachment: fixed; } }
+    background-attachment: fixed;
+    background-position: center; } }
 
 .overlay {
   background-color: #000;
@@ -460,12 +462,13 @@ section {
   .overlay {
     display: none; } }
 
-.outcome-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-column-gap: 40px;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr; }
+@media (min-width: 768px) {
+  .outcome-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 40px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; } }
 
 .outcome p {
   font-weight: bold;
@@ -473,9 +476,6 @@ section {
 
 .outcome h2 {
   color: #fff; }
-
-.outcome-row {
-  padding-top: 150px; }
 
 #cover {
   background-image: url("../images/2017/Madagascar.JPG"); }
