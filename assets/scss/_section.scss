@@ -66,6 +66,12 @@ section {
     }
   }
 
+  @media-breakpoint-up(md) {
+    &-row {
+      padding-top: 150px;
+    }
+  }
+
   p {
     font-weight: bold;
     text-align: left;
@@ -135,6 +141,10 @@ section {
 
 #car {
   background-image: url('../images/2017/car.JPG');
+
+  @include media-breakpoint-down(md) {
+    background-position: left;
+  }
 }
 
 #drc {
@@ -143,6 +153,10 @@ section {
 
 #iraq {
   background-image: url('../images/iraq2.JPG');
+
+  @include media-breakpoint-down(md) {
+    background-position: left;
+  }
 }
 
 #madagascar {
@@ -159,6 +173,10 @@ section {
 
 #syria {
   background-image: url('../images/syria.JPG');
+
+  @include media-breakpoint-down(md) {
+    background-position: left;
+  }
 }
 
 #southsudan {

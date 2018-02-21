@@ -248,6 +248,9 @@ hr {
     -ms-flex-pack: center;
         justify-content: center;
     text-align: center; }
+    @media (max-width: 991px) {
+      .grid-operation .category {
+        margin-bottom: 30px; } }
   @media (min-width: 768px) {
     .grid-operation .numbers {
       -ms-flex-align: center;
@@ -470,6 +473,10 @@ section {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr; } }
 
+@media-breakpoint-up (md) {
+  .outcome-row {
+    padding-top: 150px; } }
+
 .outcome p {
   font-weight: bold;
   text-align: left; }
@@ -522,12 +529,18 @@ section {
 
 #car {
   background-image: url("../images/2017/car.JPG"); }
+  @media (max-width: 991px) {
+    #car {
+      background-position: left; } }
 
 #drc {
   background-image: url("../images/2017/drc.png"); }
 
 #iraq {
   background-image: url("../images/iraq2.JPG"); }
+  @media (max-width: 991px) {
+    #iraq {
+      background-position: left; } }
 
 #madagascar {
   background-image: url("../images/2017/madagascar-2.JPG"); }
@@ -540,6 +553,9 @@ section {
 
 #syria {
   background-image: url("../images/syria.JPG"); }
+  @media (max-width: 991px) {
+    #syria {
+      background-position: left; } }
 
 #southsudan {
   background-image: url("../images/2017/ssd.jpg"); }
