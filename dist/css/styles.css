@@ -80,6 +80,8 @@ p {
   .serif .title {
     font-family: "Droid Serif", Georgia, serif;
     font-weight: 700; }
+    .serif .title-small {
+      font-size: 2em; }
 
 h1 {
   font-family: "Lato", Arial, sans-serif;

@@ -80,6 +80,10 @@ p {
   .title {
     font-family: $serif;
     font-weight: 700;
+
+    &-small {
+      font-size: 2em;
+    }
   }
 }
 
