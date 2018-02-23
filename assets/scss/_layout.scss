@@ -3,6 +3,13 @@ body {
   padding: 0;
 }
 
+.grid-2,
+.grid-operation,
+.slide-center {
+  position: relative;
+  z-index: 3;
+}
+
 .mb-0 {
   margin-bottom: 0;
 }
@@ -39,6 +46,15 @@ hr {
     grid-column-gap: 40px;
     grid-template-rows: 200px auto;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .right {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+  }
+
+  .highlight {
+    -ms-grid-row: 2;
   }
 
   .category {
@@ -88,13 +104,28 @@ hr {
         margin-top: 20px;
         text-align: center;
       }
+
+      & > div:nth-child(2) {
+        -ms-grid-column: 2;
+      }
+
+      & > div:nth-child(3) {
+        -ms-grid-column: 3;
+      }
     }
+  }
+
+  .highlight {
+    -ms-grid-row: 2;
   }
 
   .operation-right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
   }
 }
 
