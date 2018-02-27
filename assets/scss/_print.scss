@@ -1,0 +1,33 @@
+@media print {
+  body {
+    background-color: $lc-red;
+  }
+
+  .fade-up,
+  .fade-down {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .section {
+    background-attachment: scroll;
+    background-size: 100%;
+    min-height: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .category {
+    margin-bottom: 30px !important;
+  }
+
+  .grid-operation {
+    & > div {
+      margin: 0 !important;
+    }
+  }
+
+  .slide-center {
+    margin: 0 !important;
+  }
+}
