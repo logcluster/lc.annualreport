@@ -63,6 +63,20 @@ section {
       display: grid;
       grid-column-gap: 40px;
       grid-template-columns: 1fr 1fr;
+
+      > div:nth-child(1) {
+        -ms-grid-column: 1;
+        margin: 0 15px;
+      }
+
+      > div:nth-child(2) {
+        -ms-grid-column: 2;
+      }
+
+      > div:nth-child(3) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+      }
     }
   }
 
