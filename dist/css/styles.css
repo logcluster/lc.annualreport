@@ -182,10 +182,20 @@ h1 {
       .nav-item-link:hover span {
         transition: opacity 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
         opacity: 1; }
+  @media (max-width: 991px) {
+    .nav {
+      transform: translateX(-300px);
+      transition: transform .3s ease-in-out; }
+      .nav.show {
+        transform: translateX(0);
+        transition: transform .3s ease-in-out; } }
 
 body {
   margin: 0;
   padding: 0; }
+
+.ui-loader {
+  display: none; }
 
 .grid-2,
 .grid-operation,

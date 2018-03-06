@@ -48,4 +48,14 @@
       }
     }
   }
+
+  @include media-breakpoint-down(md) {
+    transform: translateX(-300px);
+    transition: transform .3s ease-in-out;
+
+    &.show {
+      transform: translateX(0);
+      transition: transform .3s ease-in-out;
+    }
+  }
 }
