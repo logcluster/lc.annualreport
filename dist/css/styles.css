@@ -617,6 +617,34 @@ section {
 #thankyou {
   background-attachment: local;
   background-color: #c0392b; }
+  #thankyou .link-web {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    display: inline-block; }
+    #thankyou .link-web:hover {
+      background-color: #fff;
+      color: #c0392b;
+      transition: all ease-in-out .3s; }
+  #thankyou .social-link {
+    margin: 10px;
+    border-radius: 1000px;
+    width: 40px;
+    height: 40px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    transition: all .3s ease-in-out; }
+    #thankyou .social-link:hover {
+      background-color: #fff;
+      color: #c0392b;
+      transition: all .3s ease-in-out; }
 
 .country-numbers {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);

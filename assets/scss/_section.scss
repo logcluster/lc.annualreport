@@ -208,6 +208,39 @@ section {
 #thankyou {
   background-attachment: local;
   background-color: $lc-red;
+
+  .link-web {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+      background-color: $white;
+      color: $lc-red;
+      transition: all ease-in-out .3s;
+    }
+  }
+
+  .social-link {
+    margin: 10px;
+    border-radius: 1000px;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background-color: $white;
+      color: $lc-red;
+      transition: all .3s ease-in-out;
+    }
+  }
 }
 
 
