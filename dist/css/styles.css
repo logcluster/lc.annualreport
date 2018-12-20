@@ -176,9 +176,15 @@ h1 {
     .nav-item-link {
       color: rgba(255, 255, 255, 0.5);
       font-size: 12px;
-      text-decoration: none; }
+      text-decoration: none;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
       .nav-item-link span {
-        opacity: 0; }
+        opacity: 0;
+        display: block;
+        margin-left: 10px; }
       .nav-item-link:hover span {
         transition: opacity 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
         opacity: 1; }
@@ -533,12 +539,17 @@ section {
   color: #fff; }
 
 #cover {
-  background-image: url("../images/2017/Madagascar.JPG"); }
-  #cover .slide-center {
-    margin-top: 400px; }
-    @media (max-width: 991px) {
-      #cover .slide-center {
-        margin-top: 300px; } }
+  background-image: url("../images/2018/raga.jpg"); }
+  #cover .slide-end {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+        align-items: end;
+    -ms-flex-pack: center;
+        justify-content: center;
+    min-height: 100vh; }
+  #cover .title {
+    margin-bottom: 75px; }
 
 #intro {
   background-attachment: local;
@@ -573,34 +584,28 @@ section {
   background-image: url("../images/operations.svg"); }
 
 #bangladesh {
-  background-image: url("../images/2017/bangladesh-2.jpg"); }
+  background-image: url("../images/2018/bangladesh.jpg"); }
 
 #car {
-  background-image: url("../images/2017/car.JPG"); }
+  background-image: url("../images/2018/car.JPG"); }
   @media (max-width: 991px) {
     #car {
       background-position: left; } }
 
 #drc {
-  background-image: url("../images/2017/drc.png"); }
+  background-image: url("../images/2018/drc.jpg"); }
 
 #iraq {
-  background-image: url("../images/iraq2.JPG"); }
+  background-image: url("../images/2018/iraq.jpg"); }
   @media (max-width: 991px) {
     #iraq {
       background-position: left; } }
 
-#madagascar {
-  background-image: url("../images/2017/madagascar-2.JPG"); }
-
 #nigeria {
-  background-image: url("../images/2017/nigeria-2.jpg"); }
-
-#somalia {
-  background-image: url("../images/2017/somalia-2.jpg"); }
+  background-image: url("../images/2018/nigeria.jpg"); }
 
 #syria {
-  background-image: url("../images/syria.JPG"); }
+  background-image: url("../images/2018/syria.jpg"); }
   @media (max-width: 991px) {
     #syria {
       background-position: left; } }
@@ -608,11 +613,8 @@ section {
 #southsudan {
   background-image: url("../images/2017/ssd.jpg"); }
 
-#ukraine {
-  background-image: url("../images/ukraine.jpg"); }
-
 #yemen {
-  background-image: url("../images/2017/yemen.JPG"); }
+  background-image: url("../images/2018/yemen.jpg"); }
 
 #thankyou {
   background-attachment: local;

@@ -35,9 +35,13 @@
       color: $dimmed;
       font-size: 12px;
       text-decoration: none;
+      display: flex;
+      align-items: center;
 
       span {
         opacity: 0;
+        display: block;
+        margin-left: 10px;
       }
 
       &:hover {
