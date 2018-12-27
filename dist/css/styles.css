@@ -597,18 +597,15 @@ section {
 
 #iraq {
   background-image: url("../images/2018/iraq.jpg"); }
-  @media (max-width: 991px) {
-    #iraq {
-      background-position: left; } }
+
+#libya {
+  background-image: url("../images/2018/libya.jpg"); }
 
 #nigeria {
   background-image: url("../images/2018/nigeria.jpg"); }
 
 #syria {
   background-image: url("../images/2018/syria.jpg"); }
-  @media (max-width: 991px) {
-    #syria {
-      background-position: left; } }
 
 #southsudan {
   background-image: url("../images/2017/ssd.jpg"); }
