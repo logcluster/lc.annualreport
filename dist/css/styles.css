@@ -613,6 +613,10 @@ section {
 #yemen {
   background-image: url("../images/2018/yemen.jpg"); }
 
+#stephen {
+  background-image: url("../images/2018/stephen.jpg");
+  background-position: right; }
+
 #thankyou {
   background-attachment: local;
   background-color: #c0392b; }
