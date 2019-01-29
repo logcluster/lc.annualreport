@@ -30,6 +30,20 @@ a {
 p {
   line-height: 1.4; }
 
+q {
+  font-family: "Droid Serif", Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-left: 5px solid #c0392b;
+  display: block;
+  padding-left: 30px; }
+
+.quote {
+  font-family: "Droid Serif", Georgia, serif;
+  display: block;
+  margin-top: 20px;
+  font-size: .8rem; }
+
 .red {
   color: #c0392b; }
 

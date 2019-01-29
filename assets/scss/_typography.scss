@@ -11,6 +11,22 @@ p {
   line-height: 1.4;
 }
 
+q {
+  font-family: $serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-left: 5px solid $lc-red;
+  display: block;
+  padding-left: 30px;
+}
+
+.quote {
+  font-family: $serif;
+  display: block;
+  margin-top: 20px;
+  font-size: .8rem;
+}
+
 // color classes
 .red {
   @include color($lc-red);
