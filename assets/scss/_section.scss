@@ -157,7 +157,7 @@ section {
 }
 
 #car {
-  background-image: url('../images/2018/car.JPG');
+  background-image: url('../images/2018/car.jpg');
 
   @include media-breakpoint-down(md) {
     background-position: left;
