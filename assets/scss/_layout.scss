@@ -75,6 +75,38 @@ hr {
   }
 }
 
+.grid-foreword {
+
+  @include media-breakpoint-up(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .text {
+    padding: 30px;
+
+    @include media-breakpoint-up(md){
+      padding: 0 100px;
+    }
+  }
+
+  q {
+    border-color: $white;
+  }
+
+  .img {
+    -ms-grid-column: 2;
+    height: 100vh;
+
+    img {
+      object-fit: cover;
+      height: 100vh;
+      width: 100%;
+    }
+  }
+}
+
 .grid-operation {
   margin: 0 auto;
   width: 90%;

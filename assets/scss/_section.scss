@@ -117,13 +117,6 @@ section {
   background-color: $lc-red;
 }
 
-@include media-breakpoint-up(md) {
-  .foreword {
-    width: 40%;
-    float: right;
-  }
-}
-
 #numbersOne {
   background-attachment: local;
   background-image: linear-gradient($lc-blue, darken($lc-blue, 10%));
@@ -204,8 +197,11 @@ section {
 }
 
 #stephen {
-  background-image: url('../images/2018/stephen.jpg');
-  background-position: right;
+  // background-image: url('../images/2018/stephen.jpg');
+  // background-position: right;
+  padding-bottom: 0;
+  background-color: $lc-red;
+  min-height: 100vh;
 }
 
 #thankyou {

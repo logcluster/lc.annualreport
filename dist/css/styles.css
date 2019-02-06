@@ -263,6 +263,32 @@ hr {
     text-align: center;
     -ms-grid-column-span: 2; }
 
+@media (min-width: 768px) {
+  .grid-foreword {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-flex-align: center;
+        align-items: center; } }
+
+.grid-foreword .text {
+  padding: 30px; }
+  @media (min-width: 768px) {
+    .grid-foreword .text {
+      padding: 0 100px; } }
+
+.grid-foreword q {
+  border-color: #fff; }
+
+.grid-foreword .img {
+  -ms-grid-column: 2;
+  height: 100vh; }
+  .grid-foreword .img img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%; }
+
 .grid-operation {
   margin: 0 auto;
   width: 90%; }
@@ -562,11 +588,6 @@ section {
   background-attachment: local;
   background-color: #c0392b; }
 
-@media (min-width: 768px) {
-  .foreword {
-    width: 40%;
-    float: right; } }
-
 #numbersOne {
   background-attachment: local;
   background-image: linear-gradient(#34495e, #22303d); }
@@ -629,8 +650,9 @@ section {
   background-image: url("../images/2018/yemen.jpg"); }
 
 #stephen {
-  background-image: url("../images/2018/stephen.jpg");
-  background-position: right; }
+  padding-bottom: 0;
+  background-color: #c0392b;
+  min-height: 100vh; }
 
 #thankyou {
   background-attachment: local;
