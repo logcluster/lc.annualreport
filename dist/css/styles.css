@@ -4,21 +4,12 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
 .text-left {
   text-align: left; }
-  @media (max-width: 991px) {
-    .text-left {
-      text-align: center; } }
 
 .text-right {
   text-align: right; }
-  @media (max-width: 991px) {
-    .text-right {
-      text-align: center; } }
 
 .text-center {
   text-align: center; }
-  @media (max-width: 991px) {
-    .text-center {
-      text-align: center; } }
 
 body {
   font-family: "Lato", Arial, sans-serif;
@@ -64,6 +55,7 @@ q {
   font-size: 2em;
   font-weight: 400;
   margin-top: 0;
+  margin-bottom: 0;
   text-transform: uppercase; }
   @media (min-width: 992px) {
     .title {
@@ -83,7 +75,7 @@ q {
   font-family: "Lato", Arial, sans-serif;
   font-weight: 300;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-transform: uppercase; }
   .label-red {
     color: #c0392b;
@@ -380,7 +372,9 @@ hr {
             align-items: center; } }
   .layout-center-start {
     -ms-flex-align: start;
-        align-items: flex-start; }
+        align-items: flex-start;
+    -ms-flex-pack: center;
+        justify-content: center; }
     @media (max-width: 767px) {
       .layout-center-start {
         -ms-flex-align: center;
@@ -482,7 +476,6 @@ hr {
   margin: 0; }
 
 .chart {
-  height: 500px;
   width: 100%; }
 
 section {
@@ -541,7 +534,7 @@ section {
       -ms-grid-column: 1;
       -ms-grid-row: 2; } }
 
-@media-breakpoint-up (md) {
+@media (min-width: 768px) {
   .outcome-row {
     padding-top: 150px; } }
 
@@ -569,6 +562,11 @@ section {
   background-attachment: local;
   background-color: #c0392b; }
 
+@media (min-width: 768px) {
+  .foreword {
+    width: 50%;
+    float: right; } }
+
 #numbersOne {
   background-attachment: local;
   background-image: linear-gradient(#34495e, #22303d); }
@@ -595,7 +593,7 @@ section {
 
 #emergencies {
   background-color: #fff;
-  background-image: url("../images/operations.svg"); }
+  background-image: url("../images/2018-operations.svg"); }
 
 #bangladesh {
   background-image: url("../images/2018/bangladesh.jpg"); }

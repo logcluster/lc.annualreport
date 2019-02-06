@@ -12,10 +12,6 @@
 @each $position in left, right, center {
   .text-#{$position} {
     text-align: #{$position};
-
-    @include media-breakpoint-down(md) {
-      text-align: center;
-    }
   }
 }
 

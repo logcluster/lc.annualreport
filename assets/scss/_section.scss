@@ -80,7 +80,7 @@ section {
     }
   }
 
-  @media-breakpoint-up(md) {
+  @include media-breakpoint-up(md) {
     &-row {
       padding-top: 150px;
     }
@@ -117,6 +117,13 @@ section {
   background-color: $lc-red;
 }
 
+@include media-breakpoint-up(md) {
+  .foreword {
+    width: 50%;
+    float: right;
+  }
+}
+
 #numbersOne {
   background-attachment: local;
   background-image: linear-gradient($lc-blue, darken($lc-blue, 10%));
@@ -149,7 +156,7 @@ section {
 
 #emergencies {
   background-color: $white;
-  background-image: url('../images/operations.svg');
+  background-image: url('../images/2018-operations.svg');
 }
 
 #bangladesh {

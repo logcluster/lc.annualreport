@@ -197,6 +197,7 @@ hr {
 
     &-start {
       align-items: flex-start;
+      justify-content: center;
       @include media-breakpoint-down(sm) {
         align-items: center;
       }
@@ -320,6 +321,6 @@ hr {
 }
 // Chart fixes
 .chart {
-  height: 500px;
+  // height: 500px;
   width: 100%;
 }
