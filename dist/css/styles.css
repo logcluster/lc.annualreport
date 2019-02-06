@@ -564,7 +564,7 @@ section {
 
 @media (min-width: 768px) {
   .foreword {
-    width: 50%;
+    width: 40%;
     float: right; } }
 
 #numbersOne {
@@ -678,6 +678,8 @@ section {
   width: 150px; }
   .fund-percentage-100 {
     background-image: url("../images/100-fund.svg"); }
+  .fund-percentage-98 {
+    background-image: url("../images/98-fund.svg"); }
   .fund-percentage-90 {
     background-image: url("../images/93-fund.svg"); }
   .fund-percentage-80 {
