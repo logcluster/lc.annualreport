@@ -21,6 +21,7 @@ $gray: rgba(0, 0, 0, .5);
 $dimmed: rgba(255, 255, 255, .5);
 $lc-red: #c0392b;
 $lc-blue: #34495e;
+$lc-blue-lighter: lighten($lc-blue, 10%);
 $preparedness: #26A69A;
 
 // brand colors

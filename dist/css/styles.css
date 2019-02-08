@@ -538,7 +538,7 @@ section {
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.5); }
     .blend-blue {
-      background-color: #34495e; }
+      background-color: #46637f; }
     .blend-red {
       background-color: #c0392b; }
   .overlay {
@@ -624,6 +624,10 @@ section {
   @media (max-width: 991px) {
     #car {
       background-position: left; } }
+
+#cameroon {
+  background-image: url("../images/2018/jose.jpg");
+  background-position: 0 -100px; }
 
 #drc {
   background-image: url("../images/2018/drc.jpg"); }

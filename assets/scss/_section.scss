@@ -41,7 +41,7 @@ section {
     background-color: $gray;
 
     &-blue {
-      background-color: $lc-blue;
+      background-color: $lc-blue-lighter;
     }
 
     &-red {
@@ -162,6 +162,11 @@ section {
   @include media-breakpoint-down(md) {
     background-position: left;
   }
+}
+
+#cameroon {
+  background-image: url('../images/2018/jose.jpg');
+  background-position: 0 -100px;
 }
 
 #drc {
