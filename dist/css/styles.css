@@ -641,7 +641,7 @@ section {
   background-image: url("../images/2018/nigeria.jpg"); }
 
 #syria {
-  background-image: url("../images/2018/syria.jpg"); }
+  background-image: url("../images/2018/syria02.jpg"); }
 
 #southsudan {
   background-image: url("../images/2017/ssd.jpg"); }
@@ -653,6 +653,8 @@ section {
   padding-bottom: 0;
   background-color: #c0392b;
   min-height: 100vh; }
+  #stephen .title {
+    font-size: 2rem; }
 
 #thankyou {
   background-attachment: local;

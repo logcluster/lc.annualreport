@@ -185,7 +185,7 @@ section {
 }
 
 #syria {
-  background-image: url('../images/2018/syria.jpg');
+  background-image: url('../images/2018/syria02.jpg');
 }
 
 #southsudan {
@@ -202,6 +202,10 @@ section {
   padding-bottom: 0;
   background-color: $lc-red;
   min-height: 100vh;
+
+  .title {
+    font-size: 2rem;
+  }
 }
 
 #thankyou {
