@@ -158,10 +158,19 @@ h1 {
 .note {
   color: #000;
   font-size: 10px;
-  width: 30%;
-  position: absolute;
-  bottom: 30px;
-  right: 30px; }
+  margin: 0 20px; }
+  @media (min-width: 768px) {
+    .note {
+      width: 30%;
+      right: 30px;
+      position: absolute;
+      bottom: 30px; } }
+
+@media (max-width: 991px) {
+  .text-right {
+    text-align: center; }
+  .text-left {
+    text-align: center; } }
 
 .nav {
   left: 30px;
@@ -623,15 +632,15 @@ section {
 #emergencies {
   background-color: #fff;
   background-image: url("../images/2018-operations.svg"); }
+  @media (max-width: 991px) {
+    #emergencies {
+      background-image: url("../images/2018-operations-mobile.svg"); } }
 
 #bangladesh {
   background-image: url("../images/2018/bangladesh.jpg"); }
 
 #car {
   background-image: url("../images/2018/car.jpg"); }
-  @media (max-width: 991px) {
-    #car {
-      background-position: left; } }
 
 #cameroon {
   background-image: url("../images/2018/jose_2.jpg"); }

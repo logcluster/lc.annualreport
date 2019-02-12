@@ -150,6 +150,10 @@ section {
 #emergencies {
   background-color: $white;
   background-image: url('../images/2018-operations.svg');
+
+  @include media-breakpoint-down(md) {
+    background-image: url('../images/2018-operations-mobile.svg');
+  }
 }
 
 #bangladesh {
@@ -158,10 +162,6 @@ section {
 
 #car {
   background-image: url('../images/2018/car.jpg');
-
-  @include media-breakpoint-down(md) {
-    background-position: left;
-  }
 }
 
 #cameroon {
