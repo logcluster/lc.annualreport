@@ -75,7 +75,7 @@ q {
   font-family: "Lato", Arial, sans-serif;
   font-weight: 300;
   line-height: 1.6;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-transform: uppercase; }
   .label-red {
     color: #c0392b;
@@ -171,6 +171,13 @@ h1 {
     text-align: center; }
   .text-left {
     text-align: center; } }
+
+.title-orgs {
+  font-size: 6rem; }
+
+.label-orgs {
+  font-size: 1.2rem;
+  color: #fff; }
 
 .nav {
   left: 30px;
@@ -519,7 +526,7 @@ hr {
   margin: 0; }
 
 .chart {
-  width: 100%; }
+  width: 50%; }
 
 section {
   background-position: center;
@@ -710,7 +717,8 @@ section {
 
 .country-numbers {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-  margin-bottom: 10px; }
+  margin-bottom: 30px;
+  margin-top: 30px; }
 
 .fund-percentage {
   background-repeat: no-repeat;
