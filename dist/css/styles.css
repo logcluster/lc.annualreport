@@ -643,38 +643,29 @@ section {
     #emergencies {
       background-image: url("../images/2018-operations-mobile.svg"); } }
 
-#bangladesh {
-  background-image: url("../images/2018/bangladesh.jpg"); }
-
-#car {
-  background-image: url("../images/2018/car.jpg"); }
-
-#cameroon {
-  background-image: url("../images/2018/jose_2.jpg"); }
-
-#drc {
-  background-image: url("../images/2018/drc.jpg"); }
-
-#indonesia {
-  background-image: url("../images/2018/indonesia.jpg"); }
-
-#iraq {
-  background-image: url("../images/2018/iraq.jpg"); }
-
-#libya {
-  background-image: url("../images/2018/libya.jpg"); }
-
-#nigeria {
-  background-image: url("../images/2018/nigeria.jpg"); }
-
-#syria {
-  background-image: url("../images/2018/syria02.jpg"); }
-
-#southsudan {
-  background-image: url("../images/2018/ssd.jpg"); }
-
-#yemen {
-  background-image: url("../images/2018/yemen.jpg"); }
+@media (min-width: 768px) {
+  #bangladesh {
+    background-image: url("../images/2018/bangladesh.jpg"); }
+  #car {
+    background-image: url("../images/2018/car.jpg"); }
+  #cameroon {
+    background-image: url("../images/2018/jose_2.jpg"); }
+  #drc {
+    background-image: url("../images/2018/drc.jpg"); }
+  #indonesia {
+    background-image: url("../images/2018/indonesia.jpg"); }
+  #iraq {
+    background-image: url("../images/2018/iraq.jpg"); }
+  #libya {
+    background-image: url("../images/2018/libya.jpg"); }
+  #nigeria {
+    background-image: url("../images/2018/nigeria.jpg"); }
+  #syria {
+    background-image: url("../images/2018/syria02.jpg"); }
+  #southsudan {
+    background-image: url("../images/2018/ssd.jpg"); }
+  #yemen {
+    background-image: url("../images/2018/yemen.jpg"); } }
 
 #stephen {
   padding-bottom: 0;
