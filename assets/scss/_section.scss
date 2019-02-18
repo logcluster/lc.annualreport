@@ -153,10 +153,9 @@ section {
 
 #emergencies {
   background-color: $white;
-  background-image: url('../images/2018-operations.svg');
 
-  @include media-breakpoint-down(md) {
-    background-image: url('../images/2018-operations-mobile.svg');
+  @include media-breakpoint-up(md) {
+    background-image: url('../images/2018-operations.svg');
   }
 }
 

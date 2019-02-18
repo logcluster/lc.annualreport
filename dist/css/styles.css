@@ -640,11 +640,10 @@ section {
   background-image: url("../images/2017/yemen-2.jpg"); }
 
 #emergencies {
-  background-color: #fff;
-  background-image: url("../images/2018-operations.svg"); }
-  @media (max-width: 991px) {
+  background-color: #fff; }
+  @media (min-width: 768px) {
     #emergencies {
-      background-image: url("../images/2018-operations-mobile.svg"); } }
+      background-image: url("../images/2018-operations.svg"); } }
 
 @media (min-width: 768px) {
   #bangladesh {
