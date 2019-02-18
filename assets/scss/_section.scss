@@ -41,7 +41,11 @@ section {
     background-color: $gray;
 
     &-blue {
-      background-color: $lc-blue-lighter;
+      background-color: $lc-blue;
+
+      @include media-breakpoint-up(md) {
+        background-color: $lc-blue-lighter;
+      }
     }
 
     &-red {
