@@ -189,7 +189,7 @@ h1 {
     margin: 0;
     padding: 0; }
   .nav-item {
-    margin-bottom: 16px; }
+    margin-bottom: 10px; }
     .nav-item-circle {
       transition: transform 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
       background-color: rgba(0, 0, 0, 0.5);
@@ -596,7 +596,7 @@ section {
   color: #fff; }
 
 #cover {
-  background-image: url("../images/2018/raga.jpg"); }
+  background-image: url("../images/cover.jpg"); }
   #cover .slide-end {
     display: -ms-flexbox;
     display: flex;
