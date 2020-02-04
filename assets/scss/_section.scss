@@ -41,7 +41,11 @@ section {
     background-color: $gray;
 
     &-blue {
-      background-color: $lc-blue-lighter;
+      background-color: $lc-blue;
+
+      @include media-breakpoint-up(md) {
+        background-color: $lc-blue-lighter;
+      }
     }
 
     &-red {
@@ -149,56 +153,58 @@ section {
 
 #emergencies {
   background-color: $white;
-  background-image: url('../images/2018-operations.svg');
 
-  @include media-breakpoint-down(md) {
-    background-image: url('../images/2018-operations-mobile.svg');
+  @include media-breakpoint-up(md) {
+    background-image: url('../images/2018-operations.svg');
   }
 }
 
-#bangladesh {
-  background-image: url('../images/2018/bangladesh.jpg');
+@include media-breakpoint-up(md) {
+  #bangladesh {
+    background-image: url('../images/2018/bangladesh.jpg');
+  }
+  
+  #car {
+    background-image: url('../images/2018/car.jpg');
+  }
+  
+  #cameroon {
+    background-image: url('../images/2018/jose_2.jpg');
+  }
+  
+  #drc {
+    background-image: url('../images/2018/drc.jpg');
+  }
+  
+  #indonesia {
+    background-image: url('../images/2018/indonesia.jpg');
+  }
+  
+  #iraq {
+    background-image: url('../images/2018/iraq.jpg');
+  }
+  
+  #libya {
+    background-image: url('../images/2018/libya.jpg');
+  }
+  
+  #nigeria {
+    background-image: url('../images/2018/nigeria.jpg');
+  }
+  
+  #syria {
+    background-image: url('../images/2018/syria02.jpg');
+  }
+  
+  #southsudan {
+    background-image: url('../images/2018/ssd.jpg');
+  }
+  
+  #yemen {
+    background-image: url('../images/2018/yemen.jpg');
+  }
 }
 
-#car {
-  background-image: url('../images/2018/car.jpg');
-}
-
-#cameroon {
-  background-image: url('../images/2018/jose_2.jpg');
-}
-
-#drc {
-  background-image: url('../images/2018/drc.jpg');
-}
-
-#indonesia {
-  background-image: url('../images/2018/indonesia.jpg');
-}
-
-#iraq {
-  background-image: url('../images/2018/iraq.jpg');
-}
-
-#libya {
-  background-image: url('../images/2018/libya.jpg');
-}
-
-#nigeria {
-  background-image: url('../images/2018/nigeria.jpg');
-}
-
-#syria {
-  background-image: url('../images/2018/syria02.jpg');
-}
-
-#southsudan {
-  background-image: url('../images/2018/ssd.jpg');
-}
-
-#yemen {
-  background-image: url('../images/2018/yemen.jpg');
-}
 
 #stephen {
   // background-image: url('../images/2018/stephen.jpg');
