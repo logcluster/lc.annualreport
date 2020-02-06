@@ -6,6 +6,7 @@
 // color mixin add color
 @mixin color($color) {
   color: $color;
+  fill: $color;
 }
 
 // function creates alignment classes

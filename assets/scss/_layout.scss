@@ -75,11 +75,12 @@ hr {
   }
 }
 
-.grid-foreword {
+.grid-pair {
+	color: $black;
 
   @include media-breakpoint-up(md) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
   }
 
@@ -96,14 +97,12 @@ hr {
   }
 
   .img {
-    -ms-grid-column: 2;
-    height: 100vh;
-
-    img {
-      object-fit: cover;
-      height: 100vh;
-      width: 100%;
-    }
+	-ms-grid-column: 2;
+	padding: 30px;
+	
+	@include media-breakpoint-up(md){
+		padding-right: 100px;
+	  }
   }
 }
 
@@ -355,4 +354,12 @@ hr {
 .chart {
   // height: 500px;
   width: 50%;
+}
+
+.mb-3 {
+	margin-bottom: 3rem;
+}
+
+.mt-3 {
+	margin-top: 3rem;
 }

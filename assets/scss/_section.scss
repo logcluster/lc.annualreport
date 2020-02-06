@@ -121,6 +121,20 @@ section {
   background-color: $lc-red;
 }
 
+#sag {
+	background-color: $lc-red;
+}
+
+#foreword {
+	padding: 0;
+
+	img {
+		height: 300px;
+		float: left;
+		margin-right: 30px;
+	}
+}
+
 #numbersOne {
   background-attachment: local;
   background-image: linear-gradient($lc-blue, darken($lc-blue, 10%));
@@ -155,7 +169,7 @@ section {
   background-color: $white;
 
   @include media-breakpoint-up(md) {
-    background-image: url('../images/2018-operations.svg');
+    background-image: url('../images/2019-operations@2x.png');
   }
 }
 
@@ -345,4 +359,19 @@ section {
     opacity: 1;
     transition: opacity .3s ease-in-out;
   }
+}
+
+.content {
+	max-width: 960px;
+
+	q {
+		border-color: $white;
+	}
+}
+
+.card {
+	background-color: darken($lc-red, 10%);
+	padding: 20px;
+	margin: 20px 0;
+	color: $white;
 }

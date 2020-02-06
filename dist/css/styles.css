@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700");
 @import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
@@ -12,7 +12,7 @@
   text-align: center; }
 
 body {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px; }
 
 a {
@@ -36,16 +36,20 @@ q {
   font-size: .8rem; }
 
 .red {
-  color: #c0392b; }
+  color: #c0392b;
+  fill: #c0392b; }
 
 .black {
-  color: #000; }
+  color: #000;
+  fill: #000; }
 
 .blue {
-  color: #34495e; }
+  color: #34495e;
+  fill: #34495e; }
 
 .dimmed {
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5);
+  fill: rgba(255, 255, 255, 0.5); }
 
 .light {
   font-weight: 300; }
@@ -72,7 +76,7 @@ q {
 .label {
   color: rgba(255, 255, 255, 0.5);
   display: block;
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 30px;
@@ -90,7 +94,7 @@ q {
       font-size: 2em; }
 
 h1 {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 40px;
   font-weight: 900;
   letter-spacing: 2px; }
@@ -98,7 +102,7 @@ h1 {
 .operations {
   color: #c0392b;
   font-family: 'Oswald', sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 200;
   letter-spacing: 2px;
   list-style-type: none;
@@ -145,7 +149,8 @@ h1 {
   display: block;
   font-size: 64px; }
   .icon-large {
-    font-size: 6em; }
+    font-size: 6em;
+    height: 62px; }
   .icon-facebook {
     color: #3b5998; }
   .icon-twitter {
@@ -287,31 +292,29 @@ hr {
     text-align: center;
     -ms-grid-column-span: 2; }
 
-@media (min-width: 768px) {
-  .grid-foreword {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-flex-align: center;
-        align-items: center; } }
-
-.grid-foreword .text {
-  padding: 30px; }
+.grid-pair {
+  color: #000; }
   @media (min-width: 768px) {
-    .grid-foreword .text {
-      padding: 0 100px; } }
-
-.grid-foreword q {
-  border-color: #fff; }
-
-.grid-foreword .img {
-  -ms-grid-column: 2;
-  height: 100vh; }
-  .grid-foreword .img img {
-    object-fit: cover;
-    height: 100vh;
-    width: 100%; }
+    .grid-pair {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 2fr 1fr;
+          grid-template-columns: 2fr 1fr;
+      -ms-flex-align: center;
+          align-items: center; } }
+  .grid-pair .text {
+    padding: 30px; }
+    @media (min-width: 768px) {
+      .grid-pair .text {
+        padding: 0 100px; } }
+  .grid-pair q {
+    border-color: #fff; }
+  .grid-pair .img {
+    -ms-grid-column: 2;
+    padding: 30px; }
+    @media (min-width: 768px) {
+      .grid-pair .img {
+        padding-right: 100px; } }
 
 .grid-operation {
   margin: 0 auto;
@@ -528,6 +531,12 @@ hr {
 .chart {
   width: 50%; }
 
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.mt-3 {
+  margin-top: 3rem; }
+
 section {
   background-position: center;
   background-repeat: no-repeat;
@@ -615,6 +624,16 @@ section {
   background-attachment: local;
   background-color: #c0392b; }
 
+#sag {
+  background-color: #c0392b; }
+
+#foreword {
+  padding: 0; }
+  #foreword img {
+    height: 300px;
+    float: left;
+    margin-right: 30px; }
+
 #numbersOne {
   background-attachment: local;
   background-image: linear-gradient(#34495e, #22303d); }
@@ -643,7 +662,7 @@ section {
   background-color: #fff; }
   @media (min-width: 768px) {
     #emergencies {
-      background-image: url("../images/2018-operations.svg"); } }
+      background-image: url("../images/2019-operations@2x.png"); } }
 
 @media (min-width: 768px) {
   #bangladesh {
@@ -768,6 +787,17 @@ section {
   .icon-social:hover .tooltip {
     opacity: 1;
     transition: opacity .3s ease-in-out; }
+
+.content {
+  max-width: 960px; }
+  .content q {
+    border-color: #fff; }
+
+.card {
+  background-color: #962d22;
+  padding: 20px;
+  margin: 20px 0;
+  color: #fff; }
 
 @keyframes fade-down {
   from {
