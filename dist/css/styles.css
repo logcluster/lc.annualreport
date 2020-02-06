@@ -316,6 +316,24 @@ hr {
       .grid-pair .img {
         padding-right: 100px; } }
 
+.grid-updates {
+  color: #000; }
+  @media (min-width: 768px) {
+    .grid-updates {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+      -ms-flex-align: center;
+          align-items: center; } }
+  .grid-updates .text {
+    padding: 30px; }
+    @media (min-width: 768px) {
+      .grid-updates .text {
+        padding: 0 100px; } }
+  .grid-updates q {
+    border-color: #fff; }
+
 .grid-operation {
   margin: 0 auto;
   width: 90%; }
@@ -672,21 +690,25 @@ section {
   #cameroon {
     background-image: url("../images/2018/jose_2.jpg"); }
   #drc {
-    background-image: url("../images/2018/drc.jpg"); }
+    background-image: url("../images/drc.jpg"); }
   #indonesia {
     background-image: url("../images/2018/indonesia.jpg"); }
   #iraq {
     background-image: url("../images/2018/iraq.jpg"); }
   #libya {
     background-image: url("../images/2018/libya.jpg"); }
+  #malawi {
+    background-image: url("../images/malawi.jpg"); }
   #nigeria {
     background-image: url("../images/2018/nigeria.jpg"); }
   #syria {
-    background-image: url("../images/2018/syria02.jpg"); }
+    background-image: url("../images/syria.jpg"); }
   #southsudan {
     background-image: url("../images/2018/ssd.jpg"); }
   #yemen {
-    background-image: url("../images/2018/yemen.jpg"); } }
+    background-image: url("../images/yemen.jpg"); }
+  #zimbabwe {
+    background-image: url("../images/zimbabwe.jpg"); } }
 
 #stephen {
   padding-bottom: 0;
