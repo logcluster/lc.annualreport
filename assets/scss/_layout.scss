@@ -76,7 +76,6 @@ hr {
 }
 
 .grid-pair {
-	color: $black;
 
   @include media-breakpoint-up(md) {
     display: grid;
@@ -92,10 +91,6 @@ hr {
     }
   }
 
-  q {
-    border-color: $white;
-  }
-
   .img {
 	-ms-grid-column: 2;
 	padding: 30px;
@@ -107,7 +102,6 @@ hr {
 }
 
 .grid-updates {
-	color: $black;
 
   @include media-breakpoint-up(md) {
     display: grid;
@@ -384,4 +378,17 @@ hr {
 
 .mt-3 {
 	margin-top: 3rem;
+}
+
+.img-float {
+	height: 300px;
+	float: left;
+	margin-right: 30px;
+	width: auto;
+	max-width: 100%;
+
+	&-right {
+		float: right;
+		margin-left: 30px;
+	}
 }

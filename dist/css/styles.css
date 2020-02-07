@@ -184,6 +184,15 @@ h1 {
   font-size: 1.2rem;
   color: #fff; }
 
+q.border-white {
+  border-color: #fff; }
+
+q.border-red {
+  border-color: #c0392b; }
+
+q.border-green {
+  border-color: #26A69A; }
+
 .nav {
   left: 30px;
   position: fixed;
@@ -292,47 +301,45 @@ hr {
     text-align: center;
     -ms-grid-column-span: 2; }
 
-.grid-pair {
-  color: #000; }
-  @media (min-width: 768px) {
-    .grid-pair {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 2fr 1fr;
-          grid-template-columns: 2fr 1fr;
-      -ms-flex-align: center;
-          align-items: center; } }
-  .grid-pair .text {
-    padding: 30px; }
-    @media (min-width: 768px) {
-      .grid-pair .text {
-        padding: 0 100px; } }
-  .grid-pair q {
-    border-color: #fff; }
-  .grid-pair .img {
-    -ms-grid-column: 2;
-    padding: 30px; }
-    @media (min-width: 768px) {
-      .grid-pair .img {
-        padding-right: 100px; } }
+@media (min-width: 768px) {
+  .grid-pair {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-flex-align: center;
+        align-items: center; } }
 
-.grid-updates {
-  color: #000; }
+.grid-pair .text {
+  padding: 30px; }
   @media (min-width: 768px) {
-    .grid-updates {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 1fr;
-          grid-template-columns: 1fr 1fr;
-      -ms-flex-align: center;
-          align-items: center; } }
-  .grid-updates .text {
-    padding: 30px; }
-    @media (min-width: 768px) {
-      .grid-updates .text {
-        padding: 0 100px; } }
-  .grid-updates q {
-    border-color: #fff; }
+    .grid-pair .text {
+      padding: 0 100px; } }
+
+.grid-pair .img {
+  -ms-grid-column: 2;
+  padding: 30px; }
+  @media (min-width: 768px) {
+    .grid-pair .img {
+      padding-right: 100px; } }
+
+@media (min-width: 768px) {
+  .grid-updates {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-flex-align: center;
+        align-items: center; } }
+
+.grid-updates .text {
+  padding: 30px; }
+  @media (min-width: 768px) {
+    .grid-updates .text {
+      padding: 0 100px; } }
+
+.grid-updates q {
+  border-color: #fff; }
 
 .grid-operation {
   margin: 0 auto;
@@ -555,6 +562,16 @@ hr {
 .mt-3 {
   margin-top: 3rem; }
 
+.img-float {
+  height: 300px;
+  float: left;
+  margin-right: 30px;
+  width: auto;
+  max-width: 100%; }
+  .img-float-right {
+    float: right;
+    margin-left: 30px; }
+
 section {
   background-position: center;
   background-repeat: no-repeat;
@@ -642,15 +659,12 @@ section {
   background-attachment: local;
   background-color: #c0392b; }
 
-#sag {
-  background-color: #c0392b; }
+.bg-red {
+  background-color: #c0392b;
+  color: #fff; }
 
 #foreword {
   padding: 0; }
-  #foreword img {
-    height: 300px;
-    float: left;
-    margin-right: 30px; }
 
 #numbersOne {
   background-attachment: local;
@@ -699,6 +713,8 @@ section {
     background-image: url("../images/2018/libya.jpg"); }
   #malawi {
     background-image: url("../images/malawi.jpg"); }
+  #mozambique {
+    background-image: url("../images/mozambique.jpg"); }
   #nigeria {
     background-image: url("../images/2018/nigeria.jpg"); }
   #syria {
@@ -812,8 +828,6 @@ section {
 
 .content {
   max-width: 960px; }
-  .content q {
-    border-color: #fff; }
 
 .card {
   background-color: #962d22;

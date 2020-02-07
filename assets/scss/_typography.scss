@@ -228,3 +228,14 @@ h1 {
   color: $white;
 }
 
+q.border-white {
+    border-color: $white;
+  }
+
+q.border-red {
+	border-color: $lc-red;
+}
+
+q.border-green {
+	border-color: $preparedness;
+}

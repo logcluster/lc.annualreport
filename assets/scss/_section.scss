@@ -121,18 +121,13 @@ section {
   background-color: $lc-red;
 }
 
-#sag {
+.bg-red {
 	background-color: $lc-red;
+	color: $white;
 }
 
 #foreword {
 	padding: 0;
-
-	img {
-		height: 300px;
-		float: left;
-		margin-right: 30px;
-	}
 }
 
 #numbersOne {
@@ -204,6 +199,10 @@ section {
 
   #malawi {
     background-image: url('../images/malawi.jpg');
+  }
+
+  #mozambique {
+    background-image: url('../images/mozambique.jpg');
   }
   
   #nigeria {
@@ -371,10 +370,6 @@ section {
 
 .content {
 	max-width: 960px;
-
-	q {
-		border-color: $white;
-	}
 }
 
 .card {
