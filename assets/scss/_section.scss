@@ -174,7 +174,7 @@ section {
   }
   
   #car {
-    background-image: url('../images/2018/car.jpg');
+    background-image: url('../images/car.jpg');
   }
   
   #cameroon {
@@ -316,7 +316,19 @@ section {
 
     &-50 {
       background-image: url('../images/50-fund.svg');
-    }
+	}
+
+	&-60 {
+		background-image: url('../images/63-fund.svg');
+	}
+
+	&-70 {
+		background-image: url('../images/75-fund.svg');
+	}
+	
+	&-25 {
+		background-image: url('../images/25-fund.svg');
+	  }
 
     &-label {
       margin-bottom: 0;

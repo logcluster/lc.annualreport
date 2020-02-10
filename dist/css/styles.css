@@ -700,7 +700,7 @@ section {
   #bangladesh {
     background-image: url("../images/2018/bangladesh.jpg"); }
   #car {
-    background-image: url("../images/2018/car.jpg"); }
+    background-image: url("../images/car.jpg"); }
   #cameroon {
     background-image: url("../images/2018/jose_2.jpg"); }
   #drc {
@@ -788,6 +788,12 @@ section {
     background-image: url("../images/79-fund.svg"); }
   .fund-percentage-50 {
     background-image: url("../images/50-fund.svg"); }
+  .fund-percentage-60 {
+    background-image: url("../images/63-fund.svg"); }
+  .fund-percentage-70 {
+    background-image: url("../images/75-fund.svg"); }
+  .fund-percentage-25 {
+    background-image: url("../images/25-fund.svg"); }
   .fund-percentage-label {
     margin-bottom: 0;
     margin-top: 10px; }
