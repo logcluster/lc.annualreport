@@ -572,7 +572,8 @@ hr {
     float: right;
     margin-left: 30px; }
 
-section {
+section,
+.bg-photo {
   background-position: center;
   background-repeat: no-repeat;
   background-position: center;
@@ -583,7 +584,8 @@ section {
   padding-bottom: 30px;
   position: relative; }
   @media (min-width: 768px) {
-    section {
+    section,
+    .bg-photo {
       background-attachment: fixed;
       background-position: center; } }
 
@@ -726,12 +728,18 @@ section {
   #zimbabwe {
     background-image: url("../images/zimbabwe.jpg"); } }
 
-#stephen {
-  padding-bottom: 0;
-  background-color: #c0392b;
-  min-height: 100vh; }
-  #stephen .title {
-    font-size: 2rem; }
+#sag {
+  padding-bottom: 0; }
+
+#sag-photo {
+  background-image: url("../images/zimbabwe.jpg");
+  padding: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 #thankyou {
   background-attachment: local;
