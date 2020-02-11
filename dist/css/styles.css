@@ -722,7 +722,7 @@ section,
   #syria {
     background-image: url("../images/syria.jpg"); }
   #southsudan {
-    background-image: url("../images/2018/ssd.jpg"); }
+    background-image: url("../images/ssd.jpg"); }
   #yemen {
     background-image: url("../images/yemen.jpg"); }
   #zimbabwe {
@@ -732,7 +732,7 @@ section,
   padding-bottom: 0; }
 
 #sag-photo {
-  background-image: url("../images/zimbabwe.jpg");
+  background-color: #962d22;
   padding: 50px;
   display: -ms-flexbox;
   display: flex;

@@ -215,7 +215,7 @@ section,
   }
   
   #southsudan {
-    background-image: url('../images/2018/ssd.jpg');
+    background-image: url('../images/ssd.jpg');
   }
   
   #yemen {
@@ -232,7 +232,8 @@ section,
 }
 
 #sag-photo {
-	background-image: url('../images/zimbabwe.jpg');
+	// background-image: url('../images/zimbabwe.jpg');
+	background-color: darken($lc-red, 10%);
 	padding: 50px;
 	display: flex;
 	align-items: center;
