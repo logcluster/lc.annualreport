@@ -171,7 +171,7 @@ section,
 
 @include media-breakpoint-up(md) {
   #bangladesh {
-    background-image: url('../images/2018/bangladesh.jpg');
+    background-image: url('../images/bangladesh.jpg');
   }
   
   #car {
@@ -240,6 +240,15 @@ section,
 	justify-content: center;
 }
 
+#preparedness {
+	background-image: url('../images/preparedness.jpg');
+	
+	strong {
+		background-color: $preparedness;
+		padding: 2px;
+		text-transform: uppercase;
+	}
+  }
 
 #thankyou {
   background-attachment: local;

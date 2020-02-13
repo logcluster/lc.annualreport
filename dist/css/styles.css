@@ -700,7 +700,7 @@ section,
 
 @media (min-width: 768px) {
   #bangladesh {
-    background-image: url("../images/2018/bangladesh.jpg"); }
+    background-image: url("../images/bangladesh.jpg"); }
   #car {
     background-image: url("../images/car.jpg"); }
   #cameroon {
@@ -740,6 +740,13 @@ section,
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center; }
+
+#preparedness {
+  background-image: url("../images/preparedness.jpg"); }
+  #preparedness strong {
+    background-color: #26A69A;
+    padding: 2px;
+    text-transform: uppercase; }
 
 #thankyou {
   background-attachment: local;
