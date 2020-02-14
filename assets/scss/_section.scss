@@ -241,13 +241,8 @@ section,
 }
 
 #preparedness {
-	background-image: url('../images/preparedness.jpg');
-	
-	strong {
-		background-color: $preparedness;
-		padding: 2px;
-		text-transform: uppercase;
-	}
+	// background-image: url('../images/preparedness.jpg');
+	background-color: $preparedness;
   }
 
 #thankyou {

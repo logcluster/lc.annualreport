@@ -328,9 +328,7 @@ hr {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-flex-align: center;
-        align-items: center; } }
+        grid-template-columns: 1fr 1fr; } }
 
 .grid-updates .text {
   padding: 30px; }
@@ -742,11 +740,7 @@ section,
       justify-content: center; }
 
 #preparedness {
-  background-image: url("../images/preparedness.jpg"); }
-  #preparedness strong {
-    background-color: #26A69A;
-    padding: 2px;
-    text-transform: uppercase; }
+  background-color: #26A69A; }
 
 #thankyou {
   background-attachment: local;
