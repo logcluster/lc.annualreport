@@ -843,6 +843,8 @@ section,
 
 .content {
   max-width: 960px; }
+  .content .text {
+    padding: 30px; }
 
 .card {
   background-color: #962d22;
