@@ -389,6 +389,10 @@ section,
 .content {
 	max-width: 960px;
 
+	@include media-breakpoint-down(md) {
+		padding: 30px;
+	  }
+
 	.text {
 		padding: 30px;
 	}

@@ -75,6 +75,14 @@ hr {
   }
 }
 
+.grid-foreword {
+	@include media-breakpoint-up(md) {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		// align-items: center;
+	  }
+}
+
 .grid-pair {
 
   @include media-breakpoint-up(md) {
@@ -255,7 +263,7 @@ hr {
 .slide {
   // align center
   &-center {
-    margin: 20px;
+    margin: 30px;
     text-align: center;
     z-index: 3;
     @include media-breakpoint-up(md) {
@@ -265,7 +273,7 @@ hr {
   }
 
   &-left {
-    margin: 20px;
+    margin: 30px;
     width: 90%;
     @include media-breakpoint-up(md) {
       margin-left: 10%;
@@ -391,4 +399,15 @@ hr {
 		float: right;
 		margin-left: 30px;
 	}
+}
+
+.img-foreword {
+	height: 350px;
+	margin-right: 30px;
+	width: auto;
+	max-width: 100%;
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 30px;
+	  }
 }
