@@ -166,13 +166,17 @@ section,
   background-color: $white;
 
   @include media-breakpoint-up(md) {
-    background-image: url('../images/2019-operations@2x.png');
+    background-image: url('../images/2020_operations.jpg');
   }
 }
 
 @include media-breakpoint-up(md) {
   #bangladesh {
     background-image: url('../images/bangladesh.jpg');
+  }
+
+  #burkina {
+    background-image: url('../images/burkinafaso.jpg');
   }
   
   #car {
@@ -182,9 +186,17 @@ section,
   #cameroon {
     background-image: url('../images/2018/jose_2.jpg');
   }
+
+  #covid {
+    background-image: url('../images/covid.jpg');
+  }
   
   #drc {
     background-image: url('../images/drc.jpg');
+  }
+
+  #ethiopia {
+    background-image: url('../images/ethiopia.jpg');
   }
   
   #indonesia {
@@ -193,6 +205,10 @@ section,
   
   #iraq {
     background-image: url('../images/2018/iraq.jpg');
+  }
+
+  #lebanon {
+    background-image: url('../images/lebanon.jpg');
   }
   
   #libya {
@@ -209,6 +225,14 @@ section,
   
   #nigeria {
     background-image: url('../images/nigeria.jpg');
+  }
+
+  #pacific {
+    background-image: url('../images/pacific.jpg');
+  }
+
+  #somalia {
+    background-image: url('../images/somalia.jpg');
   }
   
   #syria {
