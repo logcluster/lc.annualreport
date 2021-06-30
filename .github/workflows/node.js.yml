@@ -17,7 +17,21 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: '14'
-    - run: npm install
-    - run: gulp sass
-    - run: gulp minify-css
-    - run: gulp templates
+        cache: 'npm'
+    - name: NPM Install
+      run: npm install
+    - name: Compiling SASS
+      run: gulp sass
+    - name: Minifying CSS
+      run: gulp minify-css
+    - name: Compiling templates
+      run: gulp templates
+    - name: Committing changes
+      run: |
+        git config --local user.name  ${{ github.actor }}
+        git add -A
+        git commit -m "Update gulp output files"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.REPO_GITHUB_TOKEN }}
