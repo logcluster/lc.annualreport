@@ -3,125 +3,161 @@
         {
             "id": "cover",
             "title": "Year In Review 2020",
-            "partials": "_partials/_cover",
+            "partials": "_partials/1_cover",
             "backgroundImage": "cover.jpg",
             "classes": "layout-column layout-center blend"
         },
         {
             "id": "intro",
             "title": "The Logistics Cluster",
-            "partials": "_partials/_intro",
+            "partials": "_partials/2_intro",
             "classes": "layout-column layout-center blend"
         },
         {
             "id": "foreword",
             "title": "Foreword",
-            "partials": ""
+            "partials": "_partials/3_foreword",
+            "classes": "layout-column layout-center"
         },
         {
             "id": "sag",
             "title": "GSAG",
-            "partials": ""
+            "partials": "_partials/4_sag",
+            "classes": "layout-column layout-center bg-red"
         },
         {
-            "id": "strategy",
-            "title": "Strategy",
-            "partials": ""
+            "id": "strategy-implementation-plan",
+            "title": "Strategy Implementation Plan",
+            "partials": "_partials/5_sip",
+            "classes": "layout-column layout-center"
+        },
+        {
+            "id": "strategy-goals",
+            "title": "Strategy Goals",
+            "partials": "_partials/6_strategygoals",
+            "classes": "layout-column layout-center bg-red text-white"
         },
         {
             "id": "numbersOne",
             "title": "2020 in numbers",
-            "partials": ""
+            "partials": "_partials/7_numbers",
+            "classes": "layout-column layout-center"
+        },
+        {
+            "id": "numbersTwo",
+            "title": "2020 in numbers (web)",
+            "partials": "_partials/8_numberssocial",
+            "classes": "layout-column layout-center",
+            "index": false
+        },
+        {
+            "id": "numbersThree",
+            "title": "2020 in numbers (continued)",
+            "partials": "_partials/9_numberscont",
+            "classes": "layout-column layout-center",
+            "index": false
         },
         {
             "id": "emergencies",
             "title": "2020 Operations",
-            "partials": ""
+            "partials": "_partials/10_emergencies",
+            "classes": "layout-column layout-center layout-center-start"
         },
         {
             "id": "covid",
             "title": "COVID-19",
-            "partials": ""
+            "partials": "_partials/11_covid",
+            "classes": "blend blend-blue operation"
         },
         {
             "id": "bangladesh",
             "title": "Bangladesh",
-            "partials": ""
+            "partials": "_partials/12_bangladesh",
+            "classes": "blend blend-blue operation"
         },
         {
             "id": "burkina",
             "title": "Burkina Faso",
-            "partials": ""
+            "partials": "_partials/13_burkina",
+            "classes": "blend blend-blue operation"
         },
         {
             "id": "car",
             "title": "CAR",
-            "partials": ""
+            "partials": "_partials/14_car",
+            "classes": "blend blend-blue operation"
         },
         {
             "id": "drc",
             "title": "DRC",
-            "partials": ""
+            "partials": "_partials/15_drc",
+            "classes": "blend blend-blue operation"
         },
         {
             "id": "ethiopia",
             "title": "Ethiopia",
-            "partials": ""
+            "partials": "_partials/16_ethiopia",
+            "classes": "blend blend-blue operation"
         },
         {
             "id": "lebanon",
             "title": "Lebanon",
-            "partials": ""
+            "partials": "_partials/17_lebanon",
+            "classes": "blend blend-blue"
         },
         {
             "id": "nigeria",
             "title": "Nigeria",
-            "partials": ""
+            "partials": "_partials/18_nigeria",
+            "classes": "blend blend-blue"
         },
         {
             "id": "pacific",
             "title": "Pacific",
-            "partials": ""
+            "partials": "_partials/19_pacific",
+            "classes": "blend blend-blue"
         },
         {
             "id": "southsudan",
             "title": "South Sudan",
-            "partials": ""
+            "partials": "_partials/20_southsudan",
+            "classes": "blend blend-blue"
         },
         {
             "id": "syria",
             "title": "Syria",
-            "partials": ""
+            "partials": "_partials/21_syria",
+            "classes": "blend blend-blue"
         },
         {
             "id": "yemen",
             "title": "Yemen",
-            "partials": ""
+            "partials": "_partials/22_yemen",
+            "classes": "blend blend-blue"
         },
         {
             "id": "zimbabwe",
             "title": "Zimbabwe",
-            "partials": ""
+            "partials": "_partials/23_zimbabwe",
+            "classes": "blend blend-blue"
         },
         {
             "id": "updates",
             "title": "Operational Updates",
-            "partials": ""
+            "partials": "_partials/24_updates",
+            "classes": "layout-column layout-center bg-red"
         },
         {
             "id": "preparedness",
             "title": "Preparedness",
-            "partials": ""
-        },
-        {
-            "id": "strategy",
-            "title": "Strategy",
-            "partials": ""
+            "partials": "_partials/25_preparedness",
+            "classes": "layout-column layout-center blend"
         },
         {
             "id": "thankyou",
             "title": "Thank you!",
-            "partials": ""
+            "partials": "_partials/26_thankyou",
+            "classes": "layout-column layout-center"
         }
     ]
 }

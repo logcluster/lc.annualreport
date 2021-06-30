@@ -1,5 +1,5 @@
 var gulp = require("gulp"),
-    sass = require('gulp-dart-sass'),
+    sass = require('gulp-sass'),
     cleanCSS = require('gulp-clean-css'),
     ejs = require("gulp-ejs"),
     watch = require("gulp-watch"),

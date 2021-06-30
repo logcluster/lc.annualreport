@@ -103,8 +103,6 @@ section,
 
 // Background images
 #cover {
-  background-image: url('../images/cover.jpg');
-
   .slide-end {
     display: flex;
     align-items: flex-end;
@@ -428,4 +426,17 @@ section,
 	padding: 20px;
 	margin: 20px 0;
 	color: $white;
+}
+
+#strategy-goals {
+  color: white;
+  .four-goals {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-wrap: wrap;
+      > div {
+        flex: 1;
+      }
+	  }
+  }
 }

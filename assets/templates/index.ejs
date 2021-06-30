@@ -9,28 +9,35 @@
       <ul class="nav-list">
         <!-- List item navigation for each section, add another section to the array so that it addas a new circle link -->
         <% sections.forEach(function(section) { %>
-          <li class="nav-item">
-            <a href="#<%= section.id %>" class="nav-item-link">
-              <div class="nav-item-circle"></div>
-              <span><%= section.title %></span>
-            </a>
-          </li>
-          <% }); %>
-        </ul>
-      </nav>
-      
-      <% sections.forEach(function(section) { %>
-        <section id="<%= section.id %>" class="<%= section.classes %>" style="background-image: url('../images/<%= section.backgroundImage %>');">
-          <% if (Array.isArray(section.partials)) { %>
-            <% section.partials.forEach(function(partial) { %>
-              <%- include(partial) %>
+          <% if(typeof section.index === 'undefined' || section.index == "false") { %>
+            <li class="nav-item">
+              <a href="#<%= section.id %>" class="nav-item-link">
+                <div class="nav-item-circle"></div>
+                <span><%= section.title %></span>
+              </a>
+            </li>
+            <% } %>
             <% }); %>
-          <% } else { %>
-            <%- include(section.partials) %>
-          <% } %>
-        </section>
-      <% }); %>
-  </main>
-  <%- include("_partials/_footer") %>
-</body>
-</html>
+          </ul>
+        </nav>
+        
+        <% sections.forEach(function(section) { %>
+          <% if(section.backgroundImage) { %>
+            <section id="<%= section.id %>" class="<%= section.classes %>" style="background-image: url('./images/<%= section.backgroundImage %>');">
+              <% } else { %>
+                <section id="<%= section.id %>" class="<%= section.classes %>">
+                  <% } %>
+                  <% if (Array.isArray(section.partials)) { %>
+                    <% section.partials.forEach(function(partial) { %>
+                      <%- include(partial) %>
+                      <% }); %>
+                      <% } else { %>
+                        <%- include(section.partials) %>
+                        <% } %>
+                      </section>
+                      <% }); %>
+                    </main>
+                    <%- include("_partials/_footer") %>
+                  </body>
+                  </html>
+                  
