@@ -28,7 +28,7 @@ jobs:
       run: gulp templates
     - name: Committing changes
       run: |
-        git config --local user.name  ${{ github.actor }}
+        git config --local user.name logcluster
         git add -A
         git commit -m "Update gulp output files"
     - name: Push changes
