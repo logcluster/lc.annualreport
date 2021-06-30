@@ -1,0 +1,127 @@
+{
+    "sections": [
+        {
+            "id": "cover",
+            "title": "Year In Review 2020",
+            "partials": "_partials/_cover",
+            "backgroundImage": "cover.jpg",
+            "classes": "layout-column layout-center blend"
+        },
+        {
+            "id": "intro",
+            "title": "The Logistics Cluster",
+            "partials": "_partials/_intro",
+            "classes": "layout-column layout-center blend"
+        },
+        {
+            "id": "foreword",
+            "title": "Foreword",
+            "partials": ""
+        },
+        {
+            "id": "sag",
+            "title": "GSAG",
+            "partials": ""
+        },
+        {
+            "id": "strategy",
+            "title": "Strategy",
+            "partials": ""
+        },
+        {
+            "id": "numbersOne",
+            "title": "2020 in numbers",
+            "partials": ""
+        },
+        {
+            "id": "emergencies",
+            "title": "2020 Operations",
+            "partials": ""
+        },
+        {
+            "id": "covid",
+            "title": "COVID-19",
+            "partials": ""
+        },
+        {
+            "id": "bangladesh",
+            "title": "Bangladesh",
+            "partials": ""
+        },
+        {
+            "id": "burkina",
+            "title": "Burkina Faso",
+            "partials": ""
+        },
+        {
+            "id": "car",
+            "title": "CAR",
+            "partials": ""
+        },
+        {
+            "id": "drc",
+            "title": "DRC",
+            "partials": ""
+        },
+        {
+            "id": "ethiopia",
+            "title": "Ethiopia",
+            "partials": ""
+        },
+        {
+            "id": "lebanon",
+            "title": "Lebanon",
+            "partials": ""
+        },
+        {
+            "id": "nigeria",
+            "title": "Nigeria",
+            "partials": ""
+        },
+        {
+            "id": "pacific",
+            "title": "Pacific",
+            "partials": ""
+        },
+        {
+            "id": "southsudan",
+            "title": "South Sudan",
+            "partials": ""
+        },
+        {
+            "id": "syria",
+            "title": "Syria",
+            "partials": ""
+        },
+        {
+            "id": "yemen",
+            "title": "Yemen",
+            "partials": ""
+        },
+        {
+            "id": "zimbabwe",
+            "title": "Zimbabwe",
+            "partials": ""
+        },
+        {
+            "id": "updates",
+            "title": "Operational Updates",
+            "partials": ""
+        },
+        {
+            "id": "preparedness",
+            "title": "Preparedness",
+            "partials": ""
+        },
+        {
+            "id": "strategy",
+            "title": "Strategy",
+            "partials": ""
+        },
+        {
+            "id": "thankyou",
+            "title": "Thank you!",
+            "partials": ""
+        }
+    ]
+}

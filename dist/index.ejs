@@ -1,78 +1,36 @@
-<% include _partials/_head %>
-  <body>
-    <main>
-      <!-- Main navigation, list items, circle links -->
-      <% include _partials/_mainnav %>
-
-      <!-- Cover section -->
-      <% include _partials/_cover %>
-
-      <!-- Intro section -->
-	  <% include _partials/_intro %>
-	  
-	<!-- Foreword section -->
-	<% include _partials/_foreword %>
-
-	<!-- Foreword section -->
-	<% include _partials/_sag %>
-
-      <!-- year in numbers part one, operations -->
-      <% include _partials/_numbers %>
-
-      <!-- year in numbers part two, IM products and social media -->
-      <% include _partials/_numberssocial %>
-
-      <!-- year in numbers part 3, staff, global meetings and trainings -->
-      <% include _partials/_numberscont %>
-
-      <!-- year operations section -->
-      <% include _partials/_emergencies %>
-
-      <!-- COVID-19 section -->
-      <% include _partials/_covid %>
-
-      <!-- Bangladesh section -->
-      <% include _partials/_bangladesh %>
-
-      <!-- Burkina Faso section -->
-      <% include _partials/_burkina %>
-
-      <!-- CAR section -->
-      <% include _partials/_car %>
-
-      <!-- DRC section -->
-      <% include _partials/_drc %>
-	  
-	<!-- Malawi section -->
-	<% include _partials/_malawi %>
-
-	<!-- Mozambique section -->
-	<% include _partials/_mozambique %>
-
-      <!-- Nigeria section -->
-      <% include _partials/_nigeria %>
-
-      <!-- South Sudan section -->
-      <% include _partials/_southsudan %>
-
-      <!-- Syria section -->
-      <% include _partials/_syria %>
-
-      <!-- Yemen section -->
-	  <% include _partials/_yemen %>
-
-	  <!-- Zimbabwe section -->
-	  <% include _partials/_zimbabwe %>
-
-	  <% include _partials/_updates %>
-	  
-	  <!-- Preparedness section -->
-	  <% include _partials/_preparedness %>
-	  
-	  <!-- Strategy section -->
-      <% include _partials/_strategy %>
-
-      <!-- Thank you section -->
-      <% include _partials/_thankyou %>
-    </main>
-<% include _partials/_footer %>
+<!DOCTYPE html>
+<html>
+<%- include("_partials/_head") %>
+<body>
+  <main>  
+    <!-- Main navigation, list items, circle links -->
+    <!-- Main navigation -->
+    <nav id="mainNav" class="nav">
+      <ul class="nav-list">
+        <!-- List item navigation for each section, add another section to the array so that it addas a new circle link -->
+        <% sections.forEach(function(section) { %>
+          <li class="nav-item">
+            <a href="#<%= section.id %>" class="nav-item-link">
+              <div class="nav-item-circle"></div>
+              <span><%= section.title %></span>
+            </a>
+          </li>
+          <% }); %>
+        </ul>
+      </nav>
+      
+      <% sections.forEach(function(section) { %>
+        <section id="<% section.id %>" class="<% section.classes %>" style="background-image: url('../images/<% section.backgroundImage %>');">
+          <% if (Array.isArray(section.partials)) { %>
+            <% section.partials.forEach(function(partial) { %>
+              <%- include(partial) %>
+            <% }); %>
+          <% } else { %>
+            <%- include(section.partials) %>
+          <% } %>
+        </section>
+      <% }); %>
+  </main>
+  <%- include("_partials/_footer") %>
+</body>
+</html>
