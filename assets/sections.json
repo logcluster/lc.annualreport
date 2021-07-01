@@ -67,6 +67,7 @@
             "id": "covid",
             "title": "COVID-19",
             "partials": "_partials/11_covid",
+            "backgroundImage": "covid-background.jpg",
             "classes": "blend blend-blue operation"
         },
         {
